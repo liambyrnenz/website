@@ -1,3 +1,9 @@
-h1 {
-    font-family: Courier
+h1, h2, p {
+    font-family: courier;
+}
+
+#top {
+    background-color: black;
+    color: white;
+    padding: 35px;
 }
