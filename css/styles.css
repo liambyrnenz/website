@@ -18,6 +18,11 @@ a:hover {
     padding: 15px 35px;
 }
 
+#mid {
+    padding: 15px 35px;
+    border: 4px solid rgb(46, 117, 182);
+}
+
 #pics {
     width: 70px;
     height: 70px;
