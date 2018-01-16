@@ -1,5 +1,13 @@
-h1, p {
+h1, p, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a.top, footer {
+    font-size: 75%;
+}
+
+footer {
+    text-align: center;
 }
 
 a:link, a:visited {
@@ -15,11 +23,11 @@ a:hover {
 #top {
     background-color: rgb(46, 117, 182);
     color: white;
-    padding: 15px 35px;
+    padding: 15px 30px;
 }
 
-#mid {
-    padding: 15px 35px;
+.box {
+    padding: 15px 30px;
     border: 4px solid rgb(46, 117, 182);
 }
 
