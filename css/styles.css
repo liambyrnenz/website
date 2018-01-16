@@ -23,7 +23,7 @@ a:hover {
     border: 4px solid rgb(46, 117, 182);
 }
 
-#pics {
+.pic {
     width: 70px;
     height: 70px;
     padding: 15px;
