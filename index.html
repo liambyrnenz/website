@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="author" content="Liam Byrne"/>
-        <title>Liam Byrne | github.io</title>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <link rel="shortcut icon" href="img/github.png"/>
-    </head>
+<head>
+    <meta name="author" content="Liam Byrne" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="img/github.png" />
+    <script src="scripts/text.js" type="text/javascript"></script>
+    <script>setPageTitle();</script>
+</head>
 
-    <body>
+<body>
 
-        <div id="top">
-            <nav>
-                <a class="top" href="pages/page.html">Link one</a>
-                <a class="top" href="pages/page.html">Link two</a>
-            </nav>
-            <h1>Liam Byrne</h1>
-            <hr/>
-            <p>Welcome to my web page!</p>
-        </div>
-        <br/>
+    <div id="top">
+        <nav>
+            <a class="top" href="pages/page.html">Link one</a>
+            <a class="top" href="pages/page.html">Link two</a>
+        </nav>
+        <h1>Liam Byrne</h1>
+        <hr/>
+        <h4>Welcome to my web page!</h4>
+        <p>More text</p>
+    </div>
+    <br/>
 
-        <div class="box">
-            <p><b>Hello!</b> I'm Liam and I'm currently in my 3rd year of studying Software Engineering at Victoria University of Wellington.</p> 
-            <p>I am interested and passionate about developing innovative software for the modern age, especially in the fields of infrastructure, development tools and audio production.</p>                
-            <p>So far I have achieved an A- average in my first year courses studying towards a BE(Hons) and I am twice recognised on the Dean's List for the Faculty of Engineering.</p>
-        </div>
-        <br/>
+    <div class="box">
+        <p>
+            <b>Hello!</b> I'm Liam and I'm currently in my 3rd year of studying Software Engineering at Victoria University
+            of Wellington.</p>
+        <p>I am interested and passionate about developing innovative software for the modern age, especially in the fields
+            of infrastructure, development tools and audio production.</p>
+        <p>So far I have achieved an A- average in my first year courses studying towards a BE(Hons) and I am twice recognised
+            on the Dean's List for the Faculty of Engineering.</p>
+    </div>
+    <br/>
 
-        <div>
-            <a href="https://github.com/byrneliam2" target="_blank">
-                <img class="pic" src="img/github.png" alt="GitHub" title="Visit my GitHub!"/>
-            </a>
-            <a href="https://www.linkedin.com/in/byrneliam2" target="_blank">
-                <img class="pic" src="img/linkedin.png" alt="LinkedIn" title="Visit my LinkedIn!"/>
-            </a>
-        </div>
-        <br/>
-        
-        <hr style="color:black;"/>
-        <footer>
-            <p>Footer text</p>
-        </footer>
+    <div>
+        <a href="https://github.com/byrneliam2" target="_blank">
+            <img class="pic" src="img/github.png" alt="GitHub" title="Visit my GitHub!" />
+        </a>
+        <a href="https://www.linkedin.com/in/byrneliam2" target="_blank">
+            <img class="pic" src="img/linkedin.png" alt="LinkedIn" title="Visit my LinkedIn!" />
+        </a>
+    </div>
+    <br/>
 
-    </body>
+    <hr style="color:black;" />
+    <footer>
+        <p id="footer"></p>
+    </footer>
+    <script>pageFooter();</script>
+
+</body>
 
 </html>
