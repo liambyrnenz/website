@@ -1,8 +1,8 @@
-var TITLE = "Liam Byrne | github.io";
+var TITLE = " | Liam Byrne";
 var FOOTER_TEXT = "Footer text!";
 
-function setPageTitle() {
-    document.title = TITLE;
+function pageTitle() {
+    document.getElementById("tab").innerHTML += TITLE;
 }
 
 function pageFooter() {
