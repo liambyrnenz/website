@@ -1,5 +1,14 @@
-h1, p, a {
+h1, h2, p, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 500%;
+    line-height: 0%;
+}
+
+h2 {
+    line-height: 0%;
 }
 
 footer {
@@ -37,4 +46,16 @@ a:hover {
     height: 70px;
     padding: 15px;
     border: 2px solid black;
+}
+
+.pic2 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
