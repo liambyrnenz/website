@@ -17,7 +17,7 @@ footer {
 }
 
 a.top, footer {
-    font-size: 75%;
+    font-size: 85%;
 }
 
 a:link, a:visited {
@@ -39,7 +39,6 @@ a:hover {
 .mbox {
     padding: 5px 30px;
     border: 4px solid rgb(46, 117, 182);
-    font-size: 90%;
 }
 
 .pic {
