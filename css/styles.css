@@ -16,6 +16,10 @@ footer {
     text-align: center;
 }
 
+td {
+    padding-right: 5px;
+}
+
 a.top, footer {
     font-size: 85%;
 }

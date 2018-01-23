@@ -4,7 +4,7 @@
  */
 
 var TAB_TEXT = " | Liam Byrne";
-var SUBTITLE = "PROSPECTIVE BE(HONS)";
+var SUBTITLE = "PROSPECTIVE BE(HONS) | IT SUPPORT ASSISTANT";
 var FOOTER_TEXT = "Footer text!";
 
 function pageTitle() {
