@@ -24,8 +24,7 @@ td {
 }
 
 a.top, footer {
-    /* font-size: 85%; */
-    font-size: 0.85em;
+    font-size: 85%;
 }
 
 a:link, a:visited {
@@ -62,9 +61,9 @@ div.bmarg {
 
 .pic2 {
     /* width: 200px; */
-    width: 15em;
+    width: 14em;
     /* height: 200px; */
-    height: 15em;
+    height: 14em;
     border: 2px solid white;
 }
 
