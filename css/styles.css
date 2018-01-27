@@ -1,5 +1,3 @@
-/* TODO: All numbers to either percentages or px, not both! */
-
 h1, h2, p, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -38,7 +36,7 @@ a:hover {
 }
 
 div.bmarg {
-    margin: 0 0 1em 0;
+    margin: 0 0 1.5em 0;
 }
 
 .tbox {
