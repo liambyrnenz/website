@@ -5,6 +5,7 @@ h1, h2, p, a {
 h1, h2 {
     vertical-align: middle; 
     line-height: 0%;
+    margin: 0.75em 0;
 }
 
 h1 {
