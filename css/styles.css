@@ -41,11 +41,13 @@ div.bmarg {
     background-color: rgb(46, 117, 182);
     color: white;
     padding: 15px 30px;
+    box-shadow: 2px 2px lightgrey;
 }
 
 .mbox {
     padding: 5px 30px;
     border: 4px solid rgb(46, 117, 182);
+    box-shadow: 2px 2px lightgrey;
 }
 
 .pic {
@@ -53,6 +55,7 @@ div.bmarg {
     height: 70px;
     padding: 15px;
     border: 2px solid black;
+    box-shadow: 2px 2px lightgrey;
 }
 
 .pic2 {
