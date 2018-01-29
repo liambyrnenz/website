@@ -3,15 +3,12 @@ h1, h2, p, a {
 }
 
 h1, h2 {
-    /* vertical-align: middle;  */
     line-height: 0%;
-    margin: 0.75em 0;
 }
 
 h1 {
     font-size: 500%;
-    /* padding: 40px 0px 20px 0px; */
-    padding: 0.40em 0 0.25em 0; /* 35 -> 40 */
+    padding: 0.40em 0 0.25em 0;
 }
 
 footer {
@@ -37,7 +34,7 @@ a:hover {
 }
 
 div.bmarg {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.25em 0;
 }
 
 .tbox {
