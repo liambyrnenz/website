@@ -1,5 +1,3 @@
-/* TODO: Responsive web design: reformat top box */
-
 h1, h2, p, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -22,6 +20,8 @@ td {
     padding-right: 5px;
 }
 
+/* ---------------------------------------------------------------------- */
+
 a.top, footer {
     font-size: 85%;
 }
@@ -39,6 +39,8 @@ a:hover {
 div.bmarg {
     margin: 0 0 1.25em 0;
 }
+
+/* ---------------------------------------------------------------------- */
 
 .tbox {
     background-color: rgb(46, 117, 182);
@@ -62,6 +64,16 @@ div.bmarg {
     width: 14em;
     height: 14em;
     border: 3px solid white;
+}
+
+.mobi {
+    float: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobi {
+        float: none;
+    }
 }
 
 .clearfix::after {
