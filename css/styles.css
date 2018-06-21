@@ -53,9 +53,21 @@ a:hover {
     border: 4px solid rgb(46, 117, 182);
 }
 
+.bbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 5px;
+}
+
+.bboxem {
+    display: flex;
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+
 .maintext {
     float:left; 
-    margin-right:1.5em;
+    margin-right: 1.5em;
 }
 
 .pic {
