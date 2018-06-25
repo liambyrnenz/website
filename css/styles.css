@@ -12,8 +12,17 @@ h1 {
     padding: 0.40em 0 0.10em 0;
 }
 
+hr {
+    animation: sideswipe 1s;
+    animation-delay: 0.75s;
+    animation-fill-mode: both;
+}
+
 footer {
     text-align: center;
+    animation: fadein 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }
 
 td {
@@ -46,11 +55,15 @@ a:hover {
     background-color: rgb(46, 117, 182);
     color: white;
     padding: 15px 30px;
+    animation: fadein 1s;
 }
 
 .mbox {
     padding: 5px 30px;
     border: 3px solid rgb(46, 117, 182);
+    animation: fadein 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: both;
 }
 
 .bbox {
@@ -58,6 +71,9 @@ a:hover {
     flex-wrap: wrap;
     padding-right: 5px;
     /* justify-content: center; */
+    animation: fadein 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
 }
 
 .bboxem {
@@ -85,6 +101,7 @@ a:hover {
     height: 70px;
     padding: 10px;
     border: 3px solid rgb(46, 117, 182);
+    /* border-radius: 100%; */
 }
 
 .mobi {
@@ -121,9 +138,10 @@ a:hover {
     to   { opacity: 1; }
 }
 
-/* animation: fadein 1s;
-animation-delay: 0s;
-animation-fill-mode: both; */
+@keyframes sideswipe {
+    from { width: 0% }
+    to { width: 100% }
+}
 
 .clearfix::after {
     content: "";
