@@ -68,8 +68,13 @@ a:hover {
     padding: 0 0 0 15px;
 }
 
+.tbox-lower {
+    text-align: center;
+}
+
 .mbox {
     padding: 5px 30px;
+    text-align: center;
     border: 3px solid rgb(46, 117, 182);
     animation: fadein 1s;
     animation-delay: 0.25s;
@@ -80,7 +85,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     padding-right: 5px;
-    /* justify-content: center; */
+    justify-content: center;
     animation: fadein 2s;
     animation-delay: 0.5s;
     animation-fill-mode: both;
@@ -107,8 +112,13 @@ a:hover {
     width: 70px;
     height: 70px;
     padding: 10px;
-    border: 3px solid rgb(46, 117, 182);
+    /* border: 3px solid rgb(46, 117, 182); */
+    opacity: 0.5;
     /* border-radius: 100%; */
+}
+
+.pic2:hover{
+    opacity: 1;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -127,8 +137,6 @@ a:hover {
 
 @media only screen and (max-width: 1280px) {
     .tbox-inner {
-        display: flex;
-        flex-wrap: wrap;
         float: left;
     }
 
@@ -148,8 +156,6 @@ a:hover {
     }
 
     .bboxem {
-        display: flex;
-        flex-shrink: 0;
         padding: 5px 15px 5px 0;
     }
 }
