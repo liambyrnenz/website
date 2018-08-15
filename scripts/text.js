@@ -4,7 +4,7 @@
  */
 
 var TAB_TEXT = " | Liam Byrne";
-var FOOTER_TEXT = "Created by Liam Byrne, hosted by GitHub Pages.";
+var FOOTER_TEXT = "Created from scratch by Liam Byrne.";
 
 function pageTitle() {
   document.getElementById("tab").innerHTML += TAB_TEXT;
