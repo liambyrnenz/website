@@ -1,15 +1,7 @@
-h1, h2, p, a {
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+* {
   font-family: 'Segoe UI', 'Gill Sans', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h2 {
-  margin: 0.25em 0 1em 0;
-}
-
-h1 {
-  margin: 0;
-  font-size: 500%;
-  padding: 0.40em 0 0.10em 0;
 }
 
 hr {
@@ -47,60 +39,71 @@ a:hover {
 
 /* ---------------------------------------------------------------------- */
 
-.bmarg {
+.bottom-margin {
   margin: 0 0 1.25em 0;
 }
 
-.tbox {
+.top-box {
   background-color: rgb(46, 117, 182);
   color: white;
   padding: 15px 30px;
-  animation: fadein 1s;
 }
 
-.tbox-inner {
+.top-box-inner {
   display: flex;
   flex-wrap: wrap;
   float: right;
 }
 
-.tbox-innerem {
+.top-box-inner-em {
   padding: 0 0 0 15px;
 }
 
-.tbox-lower {
+.top-box-lower {
   text-align: center;
 }
 
-.mbox {
+.mid-box {
   padding: 5px 30px;
   text-align: center;
   border: 3px solid rgb(46, 117, 182);
-  animation: fadein 1s;
   animation-delay: 0.25s;
   animation-fill-mode: both;
 }
 
-.bbox {
+.bottom-box {
   display: flex;
   flex-wrap: wrap;
   padding-right: 5px;
   justify-content: center;
-  animation: fadein 2s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
-.bboxem {
+.bottom-box-em {
   display: flex;
   flex-shrink: 0;
   padding: 0 15px 0 0;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.heading {
+  margin: 0;
+  font-size: 500%;
+  padding: 0.40em 0 0.10em 0;
+}
+
+.subheading {
+  margin: 0.25em 0 1em 0;
 }
 
 .maintext {
   float: left; 
   margin-right: 1.5em;
 }
+
+/* ---------------------------------------------------------------------- */
 
 .pic {
   width: 14em;
@@ -133,29 +136,41 @@ a:hover {
   to { width: 100% }
 }
 
+.fade-in-d5 {
+  animation: fadein 0.5s;
+}
+
+.fade-in-1 {
+  animation: fadein 1s;
+}
+
+.fade-in-2 {
+  animation: fadein 2s;
+}
+
 /* ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1280px) {
-  .tbox-inner {
+  .top-box-inner {
     float: left;
   }
 
-  .tbox-innerem {
+  .top-box-inner-em {
     padding: 15px 15px 15px 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  h1 {
+  .heading {
     padding: 0.10em 0;
     line-height: 1em;
   }
 
-  h2 {
+  .subheading {
     margin: 1em 0;
   }
 
-  .bboxem {
+  .bottom-box-em {
     padding: 5px 15px 5px 0;
   }
 }
