@@ -14,7 +14,7 @@ function getProjects() {
   JSON.parse(request.responseText).forEach(e => {
     var elem = document.createElement('p');
     
-    var name = document.createElement('b');
+    var name = document.createElement('h2');
     name.textContent = e.name;
     elem.appendChild(name);
 
@@ -22,9 +22,12 @@ function getProjects() {
 
     var link = document.createElement('a');
     link.href = e.html_url;
-    link.style = "color: black";
     link.textContent = "(See on GitHub)";
     elem.appendChild(link);
+
+    var desc = document.createElement('p');
+    desc.textContent = e.description;
+    elem.appendChild(desc);
 
     host.appendChild(elem);
   });
