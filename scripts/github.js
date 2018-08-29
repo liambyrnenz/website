@@ -6,6 +6,8 @@
 const githubRepoUrl = 'https://api.github.com/users/byrneliam2/repos';
 
 const favourites = ["flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
+const delay = 0.2;
+var multiplier = 0;
 
 function getProjects() {
   var request = new XMLHttpRequest()
@@ -43,11 +45,16 @@ function addFavourites() {
     var link = document.createElement('a');
 
     link.className = "top projects";
+    link.style = "animation: fadein 1s;animation-delay: " + 
+      (0.5 + (multiplier * delay)) + 
+      "s;animation-fill-mode: both;";
     link.href = "https://github.com/byrneliam2/" + e;
     link.target = "_blank";
     link.textContent = e;
 
     elem.appendChild(link);
     host.appendChild(elem);
+
+    multiplier++;
   });
 }
