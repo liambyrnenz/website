@@ -38,6 +38,7 @@ hr.vert {
   background-color: white;
   width: 0.5px;
   height: 1.5em;
+  margin: 0;
   margin-left: 0.75em;
   margin-right: 0.25em;
 }
@@ -123,6 +124,7 @@ a.projects {
 .scrollable-hz {
   display: block;
   overflow-x: auto;
+  white-space: nowrap;
 }
 
 .centred {

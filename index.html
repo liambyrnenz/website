@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="img/me.jpg" />
+    <script src="scripts/github.js"></script>
     <script src="scripts/text.js"></script>
     <title id="tab">Home</title>
     <script>pageTitle();</script>
@@ -16,7 +17,7 @@
     <div class="top-box fade-in-1 bottom-margin">
       <nav>
         <table class="scrollable-hz">
-          <tr>
+          <tr id="navbar-row">
             <td>
               <a class="top" href="index.html">Home</a>
             </td>
@@ -26,12 +27,10 @@
             <td>
               <a class="top" href="pages/blog.html">Blog</a>
             </td>
-            <!-- <td>
+            <td>
               <hr class="vert" />
             </td>
-            <td>
-              <a class="top projects">Projects</a>
-            </td> -->
+            <script>addFavourites();</script>
           </tr>
         </table>
       </nav>

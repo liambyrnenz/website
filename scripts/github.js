@@ -5,6 +5,8 @@
 
 const githubRepoUrl = 'https://api.github.com/users/byrneliam2/repos';
 
+const favourites = ["flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
+
 function getProjects() {
   var request = new XMLHttpRequest()
   request.open("GET", githubRepoUrl, false);
@@ -22,6 +24,7 @@ function getProjects() {
 
     var link = document.createElement('a');
     link.href = e.html_url;
+    link.target = "_blank";
     link.textContent = "(See on GitHub)";
     elem.appendChild(link);
 
@@ -29,6 +32,22 @@ function getProjects() {
     desc.textContent = e.description;
     elem.appendChild(desc);
 
+    host.appendChild(elem);
+  });
+}
+
+function addFavourites() {
+  var host = document.getElementById('navbar-row');
+  favourites.forEach((e) => {
+    var elem = document.createElement('td');
+    var link = document.createElement('a');
+
+    link.className = "top projects";
+    link.href = "https://github.com/byrneliam2/" + e;
+    link.target = "_blank";
+    link.textContent = e;
+
+    elem.appendChild(link);
     host.appendChild(elem);
   });
 }
