@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 * {
-  font-family: 'Segoe UI', 'Gill Sans', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Fira Sans', 'Segoe UI', sans-serif;
+  line-height: 1.5em;
 }
 
-hr {
-  animation: sideswipe 1s;
-  animation-delay: 0.75s;
-  animation-fill-mode: both;
+body {
+  background-image: url("../img/bg.png");
+  background-size: cover;
 }
 
 footer {
   text-align: center;
+  font-size: 85%;
   animation: fadein 1s;
   animation-delay: 1s;
   animation-fill-mode: both;
@@ -23,24 +24,38 @@ td {
 
 /* ---------------------------------------------------------------------- */
 
-a.top, footer {
-  font-size: 85%;
+hr {
+  animation: sideswipe 1s;
+  animation-delay: 0.75s;
+  animation-fill-mode: both;
 }
 
-a:link, a:visited {
-  color: white;
-  text-decoration: underline;
-}
+/* ---------------------------------------------------------------------- */
 
-a:hover {
-  color: white;
+a.top {
+  display: block;
+  font-size: 75%;
+  text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.375em;
+  width: 5em;
+  border: 1px solid white;
+}
+
+a.top:link, a:visited {
+  color: white;
+}
+
+a.top:hover {
+  background-color: white;
+  color: rgb(46, 117, 182);
 }
 
 /* ---------------------------------------------------------------------- */
 
 .bottom-margin {
-  margin: 0 0 1em 0;
+  margin: 0 0 0.95em 0;
 }
 
 .top-box {
@@ -56,10 +71,11 @@ a:hover {
 }
 
 .top-box-inner-em {
-  padding: 0 0 0 15px;
+  padding-left: 15px;
 }
 
 .top-box-lower {
+  padding-top: 0.1em;
   text-align: center;
 }
 
@@ -83,7 +99,8 @@ a:hover {
 .bottom-box-em {
   display: flex;
   flex-shrink: 0;
-  padding: 0 15px 0 0;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -91,11 +108,12 @@ a:hover {
 .heading {
   margin: 0;
   font-size: 500%;
-  padding: 0.40em 0 0.10em 0;
+  padding-top: 0.4em;
 }
 
 .subheading {
-  margin: 0.25em 0 1em 0;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 .maintext {
@@ -114,10 +132,8 @@ a:hover {
 .pic2 {
   width: 70px;
   height: 70px;
-  padding: 10px;
-  /* border: 3px solid rgb(46, 117, 182); */
+  padding: 0 10px;
   opacity: 0.5;
-  /* border-radius: 100%; */
 }
 
 .pic2:hover{
@@ -151,18 +167,7 @@ a:hover {
 /* ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1280px) {
-  .top-box-inner {
-    float: left;
-  }
-
-  .top-box-inner-em {
-    padding: 15px 15px 15px 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .heading {
-    padding: 0.10em 0;
     line-height: 1em;
   }
 
@@ -170,6 +175,16 @@ a:hover {
     margin: 1em 0;
   }
 
+  .top-box-inner {
+    float: left;
+  }
+
+  .top-box-inner-em {
+    padding: 10px 10px 10px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .bottom-box-em {
     padding: 5px 15px 5px 0;
   }
