@@ -1,14 +1,19 @@
 /**
  * Liam Byrne (byrneliam2)
  * GithubIO
+ * 
+ * Uses the DOM to dynamically add elements to pages.
  */
 
 const githubRepoUrl = 'https://api.github.com/users/byrneliam2/repos';
 
-const favourites = ["flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
+const favourites = ["grouper", "flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
 const delay = 0.2;
 var multiplier = 0;
 
+/**
+ * Get all projects from my GitHub and display them.
+ */
 function getProjects() {
   var request = new XMLHttpRequest()
   request.open("GET", githubRepoUrl, false);
@@ -38,6 +43,9 @@ function getProjects() {
   });
 }
 
+/**
+ * Add favourite projects into the navigation bar (only on the home page.)
+ */
 function addFavourites() {
   var host = document.getElementById('navbar-row');
   favourites.forEach((e) => {
