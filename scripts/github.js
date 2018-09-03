@@ -11,15 +11,28 @@ const favourites = ["grouper", "flat-five", "team-treehouse", "congo-hadr", "fdc
 const delay = 0.2;
 var multiplier = 0;
 
+function getFavouriteProjects() {
+  var request = new XMLHttpRequest();
+  request.open("GET", "https://api.github.com/repos/byrneliam2/congo-hadr/readme", false);
+  request.setRequestHeader("Accept", "application/vnd.github.v3.html");
+  request.send();
+
+  console.log(request.responseText);
+  var host = document.getElementById('fav-projects');
+  var div = document.createElement('div');
+  div.innerHTML = request.responseText.trim();
+  host.appendChild(div);
+}
+
 /**
  * Get all projects from my GitHub and display them.
  */
-function getProjects() {
-  var request = new XMLHttpRequest()
+function getAllProjects() {
+  var request = new XMLHttpRequest();
   request.open("GET", githubRepoUrl, false);
   request.send();
 
-  var host = document.getElementById('projects');
+  var host = document.getElementById('all-projects');
   JSON.parse(request.responseText).forEach(e => {
     var elem = document.createElement('p');
     
