@@ -8,7 +8,9 @@
 const githubRepoUrl = 'https://api.github.com/users/byrneliam2/repos';
 
 const favourites = ["grouper", "flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
-const delay = 0.2;
+
+const INITIAL = 0.5;
+const DELAY = 1/favourites.length;
 var multiplier = 0;
 
 function getFavouriteProjects() {
@@ -67,7 +69,7 @@ function addFavourites() {
 
     link.className = "top projects";
     link.style = "animation: fadein 1s;animation-delay: " + 
-      (0.5 + (multiplier * delay)) + 
+      (INITIAL + (multiplier * DELAY)) + 
       "s;animation-fill-mode: both;";
     link.href = "https://github.com/byrneliam2/" + e;
     link.target = "_blank";
