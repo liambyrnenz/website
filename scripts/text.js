@@ -1,5 +1,5 @@
 /**
- * Liam Byrne (byrneliam2)
+ * Liam Byrne (liambyrnenz)
  * GithubIO
  */
 

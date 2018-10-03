@@ -1,11 +1,11 @@
 /**
- * Liam Byrne (byrneliam2)
+ * Liam Byrne (liambyrnenz)
  * GithubIO
  * 
  * Uses the DOM to dynamically add elements to pages.
  */
 
-const githubRepoUrl = 'https://api.github.com/users/byrneliam2/repos';
+const githubRepoUrl = 'https://api.github.com/users/liambyrnenz/repos';
 
 const favourites = ["grouper", "flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
 
@@ -15,7 +15,7 @@ var multiplier = 0;
 
 function getFavouriteProjects() {
   var request = new XMLHttpRequest();
-  request.open("GET", "https://api.github.com/repos/byrneliam2/congo-hadr/readme", false);
+  request.open("GET", "https://api.github.com/repos/liambyrnenz/congo-hadr/readme", false);
   request.setRequestHeader("Accept", "application/vnd.github.v3.html");
   request.send();
 
@@ -71,7 +71,7 @@ function addFavourites() {
     link.style = "animation: fadein 1s;animation-delay: " + 
       (INITIAL + (multiplier * DELAY)) + 
       "s;animation-fill-mode: both;";
-    link.href = "https://github.com/byrneliam2/" + e;
+    link.href = "https://github.com/liambyrnenz/" + e;
     link.target = "_blank";
     link.textContent = e;
 
