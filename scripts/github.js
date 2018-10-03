@@ -7,7 +7,7 @@
 
 const githubRepoUrl = 'https://api.github.com/users/liambyrnenz/repos';
 
-const favourites = ["grouper", "flat-five", "team-treehouse", "congo-hadr", "fdc", "pyvuw"]
+const favourites = ["singlesentence", "grouper", "flat-five", "team-treehouse", "congo-hadr"]
 
 const INITIAL = 0.5;
 const DELAY = 1/favourites.length;
