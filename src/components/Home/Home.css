@@ -1,6 +1,5 @@
-@keyframes scale {
-  from { transform: scale(0) }
-  to { transform: scale(1) }
+body {
+  background-color: black;
 }
 
 @media only screen and (max-width: 768px) {

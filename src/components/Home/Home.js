@@ -15,16 +15,13 @@ class Home extends Component {
     for (var i = 1; i <= 12; i++) {
       tiles.push(<TileContainer style={
         {
-          animation: `scale ${0.25 * i/2 > 1 ? 1 : 0.25 * i/2}s`,
-          animationDelay: `${0.1 * i}s`,
+          animation: `fadein 1s`,
+          animationDelay: `${0.5 + (0.1 * i)}s`,
           animationFillMode: 'both'
         }
       }>
         <Tile>
-          <TileOverlay>
-            <Label type="full" text="Hello world blah blah blah" bg="white" fg="black" />
-            <Label type="sub" text="Hello world" bg="white" fg="black" />
-          </TileOverlay>
+          <TileOverlay/>
           <Label type="quote" text="Long winded review that should wrap lines." bg="black" fg="white" />
           <Label type="stamp" text="Timestamp!" bg="black" fg="white" />
         </Tile>
