@@ -6,7 +6,7 @@ class Tile extends Component {
   render() {
     return (
       <a href="/">
-        <div className="tile">
+        <div className="tile" style={{width: '256px', height: '256px'}}>
           {this.props.children}
         </div>
       </a>

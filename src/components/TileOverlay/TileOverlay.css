@@ -3,5 +3,6 @@
   height: 100%;
   z-index: 999;
   background-image: url(../../assets/example.png);
+  background-size: cover;
   position: absolute;
 }

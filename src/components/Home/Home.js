@@ -15,7 +15,7 @@ class Home extends Component {
     for (var i = 1; i <= 12; i++) {
       tiles.push(<TileContainer style={
         {
-          animation: `fadein 1s`,
+          animation: 'fadein 1s',
           animationDelay: `${0.5 + (0.1 * i)}s`,
           animationFillMode: 'both'
         }
@@ -23,7 +23,7 @@ class Home extends Component {
         <Tile>
           <TileOverlay/>
           <Label type="quote" text="Long winded review that should wrap lines." bg="black" fg="white" />
-          <Label type="stamp" text="Timestamp!" bg="black" fg="white" />
+          {/* <Label type="stamp" text="Timestamp!" bg="black" fg="white" /> */}
         </Tile>
       </TileContainer>
       );
