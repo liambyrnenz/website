@@ -1,0 +1,42 @@
+.full {
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  max-width: 92.5%;
+  top: 75%;
+  margin: 0.25em;
+  padding: 0 0.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub {
+  font-size: 1em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 90%;
+  margin: 0.25em 0.5em;
+  padding: 0 0.1em;
+}
+
+.quote {
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 25%;
+  margin: 0.25em;
+  padding: 0 0.1em;
+}
+
+.quote:before, .quote:after {
+  content: '"';
+}
+
+.stamp {
+  font-size: 1em;
+  position: absolute;
+  top: 90%;
+  margin: 0.25em 0.5em;
+  padding: 0 0.1em;
+}

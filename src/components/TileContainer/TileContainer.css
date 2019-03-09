@@ -1,0 +1,10 @@
+.slide .cover {
+  top: 0;
+  transition: 0.5s;
+}
+
+.slide:hover .cover {
+  /* top: -243px; */
+  top: -75%;
+  transition: all 0.5s;
+}

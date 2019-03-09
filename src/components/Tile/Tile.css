@@ -1,0 +1,7 @@
+.tile {
+  width: 324px;
+  height: 324px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
