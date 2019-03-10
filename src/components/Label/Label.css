@@ -1,14 +1,15 @@
-.quote {
+.primary {
   font-size: 1.5em;
   font-weight: bold;
   position: absolute;
   padding: 0.75em;
+  top: 15%;
 }
 
-.stamp {
+.title {
   font-size: 1em;
+  font-weight: bold;
   position: absolute;
-  top: 80%;
-  margin: 0.75em;
-  padding: 0.75em;
+  margin: 0.5em 0;
+  padding: 0 1em;
 }

@@ -18,6 +18,10 @@ class TileService {
     "", "", "", "", "", "", ""]
   }
 
+  static titlesInOrder() {
+    return ["I AM A...", "I WORK AT...", "I WORK WITH...", "", "", "", "", ""]
+  }
+
 }
 
 export default TileService;
