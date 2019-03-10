@@ -26,15 +26,21 @@ class Tile extends Component {
 
   computeNumberOfColumns() {
     if (window.innerWidth > 1280) {
-      return this.state.size / 5; 
+      return this.state.size / 5;
     }
     if (window.innerWidth > 720) {
       return this.state.size / 4;
     }
+    if (window.innerWidth > 580) {
+      return this.state.size / 3;
+    }
     if (window.innerWidth > 480) {
       return this.state.size / 2;
-    } 
-    return DEFAULT_SIZE / 2;
+    }
+    if (window.innerWidth > 350) {
+      return DEFAULT_SIZE / 2;
+    }
+    return DEFAULT_SIZE
   }
 
   render() {
