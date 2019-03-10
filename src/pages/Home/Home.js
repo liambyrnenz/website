@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-import { Header } from '../Header';
-import { Tile } from '../Tile';
-import { TileOverlay } from '../TileOverlay';
-import { TileContainer } from '../TileContainer';
-import { Label } from '../Label';
-import { Grid } from '../Grid';
+import TileService from "../../services/TileService";
+
+import { Header, Tile, TileOverlay, TileContainer, Label, Grid } from '../../components';
 
 class Home extends Component {
 
   getTiles() {
     var tiles = [];
-    for (var i = 1; i <= 10; i++) {
+    let images = TileService.imagesInOrder();
+    let text = TileService.textInOrder();
+
+    for (var i = 0; i < images.length; i++) {
       tiles.push(<TileContainer style={
         {
           animation: 'fadein 1s',
-          animationDelay: `${0.5 + (0.1 * i)}s`,
+          animationDelay: `${0.5 + (0.1 * (i + 1))}s`,
           animationFillMode: 'both'
         }
       }>
-        <Tile>
-          <TileOverlay/>
-          <Label type="quote" text="Long winded review that should wrap lines." bg="black" fg="white" />
+        <Tile link="/">
+          <TileOverlay image={images[i]}/>
+          <Label type="quote" text={text[i]} bg="black" fg="white" />
           {/* <Label type="stamp" text="Timestamp!" bg="black" fg="white" /> */}
         </Tile>
       </TileContainer>

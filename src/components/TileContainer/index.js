@@ -1,3 +1,3 @@
 import TileContainer from './TileContainer';
 
-export { TileContainer }
+export default TileContainer
