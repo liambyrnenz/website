@@ -4,7 +4,6 @@
 }
 
 .slide:hover .cover {
-  /* top: -243px; */
   top: -100%;
   transition: all 0.5s;
 }

@@ -12,7 +12,7 @@ class Home extends Component {
 
   getTiles() {
     var tiles = [];
-    for (var i = 1; i <= 12; i++) {
+    for (var i = 1; i <= 10; i++) {
       tiles.push(<TileContainer style={
         {
           animation: 'fadein 1s',
