@@ -26,7 +26,7 @@ class Tile extends Component {
 
   computeNumberOfColumns() {
     if (window.innerWidth > 1280) {
-      return this.state.size / 5;
+      return DEFAULT_SIZE;
     }
     if (window.innerWidth > 720) {
       return this.state.size / 4;
