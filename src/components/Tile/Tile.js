@@ -46,7 +46,7 @@ class Tile extends Component {
   render() {
     let size = this.computeNumberOfColumns()
     return (
-      <a href={this.props.link}>
+      <a href={this.props.link} target="_blank">
         <div className="tile" style={{ width: size + 'px', height: size + 'px' }}>
           {this.props.children}
         </div>

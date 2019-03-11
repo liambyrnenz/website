@@ -41,6 +41,19 @@ class TileService {
     ]
   }
 
+  static linksInOrder() {
+    return [
+      null,
+      "https://alphero.com",
+      null,
+      "https://github.com/liambyrnenz",
+      "https://linkedin.com/in/liambyrnenz",
+      "https://soundcloud.com/brnebeats",
+      "https://twitter.com/liambyrnenz",
+      "https://www.meetup.com/en-AU/members/235913087/"
+    ]
+  }
+
 }
 
 export default TileService;

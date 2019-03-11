@@ -12,6 +12,7 @@ class Home extends Component {
     let images = TileService.imagesInOrder();
     let text = TileService.textInOrder();
     let titles = TileService.titlesInOrder();
+    let links = TileService.linksInOrder();
 
     for (var i = 0; i < images.length; i++) {
       tiles.push(<TileContainer style={
@@ -21,7 +22,7 @@ class Home extends Component {
           animationFillMode: 'both'
         }
       }>
-        <Tile link="/">
+        <Tile link={links[i]}>
           <TileOverlay image={images[i]}/>
           <Label type="title" text={titles[i]} bg="black" fg="white" />
           <Label type="primary" text={text[i]} bg="black" fg="white" />
