@@ -14,3 +14,27 @@
   padding: 0 1em;
   top: 2%;
 }
+
+@media only screen and (max-width: 680px) {
+
+  .primary {
+    font-size: 2vw;
+  }
+  
+  .title {
+    font-size: 1.5vw;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .primary {
+    font-size: 2.75vw;
+  }
+  
+  .title {
+    font-size: 2vw;
+  }
+
+}
