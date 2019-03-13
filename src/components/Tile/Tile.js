@@ -37,9 +37,6 @@ class Tile extends Component {
     if (window.innerWidth > 480) {
       return this.state.size / 2;
     }
-    if (window.innerWidth > 350) {
-      return DEFAULT_SIZE / 2;
-    }
     return DEFAULT_SIZE
   }
 
