@@ -1,11 +1,25 @@
+/* These rules actually apply to the .cover class in TileOverlay.css */
+/* i.e. the rules affect all .cover elements inside .slides */
+
 .slide .cover {
   top: 0;
   opacity: 1;
   transition: 0.5s;
 }
 
-.slide:hover .cover {
+.slide2 .cover {
   top: -100%;
   opacity: 0;
   transition: all 0.5s;
+}
+
+/* Only enable hover on desktop */
+@media only screen and (min-width: 1024px) {
+
+  .slide:hover .cover {
+    top: -100%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
 }

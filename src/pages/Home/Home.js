@@ -14,7 +14,9 @@ class Home extends Component {
         titles = TileService.titlesInOrder();
 
     for (var i = 0; i < images.length; i++) {
-      tiles.push(<TileContainer style={
+      tiles.push(
+      
+      <TileContainer style={
         {
           animation: 'fadein 1s',
           animationDelay: `${0.5 + (0.1 * (i + 1))}s`,
@@ -27,6 +29,7 @@ class Home extends Component {
           <Label type="primary" text={text[i]} />
         </Tile>
       </TileContainer>
+      
       );
     }
     return tiles;

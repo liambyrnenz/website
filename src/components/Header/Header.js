@@ -4,6 +4,7 @@ import './Header.css';
 
 import Logo from '../Logo';
 
+// Header bar across the top of the page, with the title logo and any additional information.
 class Header extends Component {
 
   render() {

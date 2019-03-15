@@ -3,6 +3,7 @@ import './Tile.css';
 
 const DEFAULT_SIZE = 256;
 
+// Last component in the tile hierarchy. Defines size and holds all underlying content.
 class Tile extends Component {
 
   constructor(props) {
