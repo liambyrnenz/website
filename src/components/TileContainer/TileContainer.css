@@ -9,9 +9,3 @@
   opacity: 0;
   transition: all 0.5s;
 }
-
-.slide:active .cover {
-  top: -100%;
-  opacity: 0;
-  transition: all 0.5s;
-}

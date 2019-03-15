@@ -24,7 +24,7 @@ class Tile extends Component {
     this.setState({ size: window.innerWidth - DEFAULT_SIZE });
   }
 
-  computeNumberOfColumns() {
+  sizeOfColumn() {
     if (window.innerWidth > 1280) {
       return DEFAULT_SIZE;
     }
@@ -41,13 +41,11 @@ class Tile extends Component {
   }
 
   render() {
-    let size = this.computeNumberOfColumns()
+    let size = this.sizeOfColumn()
     return (
-      <a href={this.props.link} target="_blank" rel="noopener noreferrer">
-        <div className="tile" style={{ width: size + 'px', height: size + 'px' }}>
-          {this.props.children}
-        </div>
-      </a>
+      <div className="tile" style={{ width: size + 'px', height: size + 'px' }}>
+        {this.props.children}
+      </div>
     );
   }
 
