@@ -23,7 +23,7 @@ class TileService {
       (<span>Junior software engineer with a focus on pushing the boundaries of mobile innovation.</span>), 
 
       // AlpheroImage
-      (<span><a href="https://alphero.com" target="_blank" rel="noopener noreferrer">Alphero</a>, a digital services company which makes beautiful mobile apps and websites.</span>), 
+      (<span><a href="https://alphero.com" target="_blank" rel="noopener noreferrer" style={{color: "#37BEB9"}}>Alphero</a>, a digital services company which makes beautiful mobile apps and websites.</span>), 
 
       // AppleImage
       (<span>An iOS developer, making apps for multiple clients across many sectors in New Zealand.</span>), 
@@ -32,16 +32,16 @@ class TileService {
       (<span>Check out my projects on <a href="https://github.com/liambyrnenz" target="_blank" rel="noopener noreferrer">GitHub</a>.</span>), 
 
       // LinkedinImage
-      (<span>Connect with me on <a href="https://linkedin.com/in/liambyrnenz" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</span>),
+      (<span>Connect with me on <a href="https://linkedin.com/in/liambyrnenz" target="_blank" rel="noopener noreferrer" style={{color: "#0173B2"}}>LinkedIn</a>.</span>),
       
       // SoundcloudImage
-      (<span>I like making music. Why not have a listen on my <a href="https://soundcloud.com/brnebeats" target="_blank" rel="noopener noreferrer">SoundCloud</a>?</span>), 
+      (<span>I like making music. Why not have a listen on my <a href="https://soundcloud.com/brnebeats" target="_blank" rel="noopener noreferrer" style={{color: "#FF6700"}}>SoundCloud</a>?</span>), 
 
       // TwitterImage
-      (<span>Follow me on <a href="https://twitter.com/liambyrnenz" target="_blank" rel="noopener noreferrer">Twitter</a>.</span>), 
+      (<span>Follow me on <a href="https://twitter.com/liambyrnenz" target="_blank" rel="noopener noreferrer" style={{color: "#2DAAE1"}}>Twitter</a>.</span>), 
 
       // MeetupImage
-      (<span>See my profile on <a href="https://www.meetup.com/en-AU/members/235913087/" target="_blank" rel="noopener noreferrer">Meetup</a>.</span>)
+      (<span>See my profile on <a href="https://www.meetup.com/en-AU/members/235913087/" target="_blank" rel="noopener noreferrer" style={{color: "#BE1E2D"}}>Meetup</a>.</span>)
     ]
   }
 
