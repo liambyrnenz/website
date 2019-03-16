@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-import { Header, Banner, Tile, TileOverlay, TileContainer, Label, Grid } from '../../components';
+import { Banner, Footer, Grid, Header, Label, Tile, TileContainer, TileOverlay } from '../../components';
 
 import TileService from '../../services/TileService';
 
@@ -61,6 +61,7 @@ class Home extends Component {
         <Grid>
           {this.getTiles()}
         </Grid>
+        <Footer />
       </div>
     );
   }

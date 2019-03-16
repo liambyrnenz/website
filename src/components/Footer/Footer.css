@@ -1,0 +1,22 @@
+.footer {
+  border-radius: 5px;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  animation: fadein 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.footer-text {
+  color: #FFFFFF50;
+  font-size: 0.75em;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+
+.footer-text:hover {
+  color: white;
+  transition: all 0.25s;
+}
