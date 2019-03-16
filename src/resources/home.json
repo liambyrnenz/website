@@ -7,11 +7,12 @@
   {
     "image_name": "alphero.png",
     "title": "I WORK AT...",
-    "text": "%0, a digital services company which makes beautiful mobile apps and websites.",
+    "text": "(%link), a digital services company which makes beautiful mobile apps and websites.",
     "links": [
       {
         "name": "Alphero",
-        "link": "https://alphero.com"
+        "link": "https://alphero.com",
+        "colour": "#37BEB9"
       }
     ]
   },
@@ -23,55 +24,60 @@
   {
     "image_name": "github.png",
     "title": "GITHUB",
-    "text": "Check out my projects on %0.",
+    "text": "Check out my projects on (%link).",
     "links": [
       {
         "name": "GitHub",
-        "link": "https://github.com/liambyrnenz"
+        "link": "https://github.com/liambyrnenz",
+        "colour": "#FFFFFF"
       }
     ]
   },
   {
     "image_name": "linkedin.png",
     "title": "LINKEDIN",
-    "text": "Connect with me on %0.",
+    "text": "Connect with me on (%link).",
     "links": [
       {
         "name": "LinkedIn",
-        "link": "https://linkedin.com/in/liambyrnenz"
+        "link": "https://linkedin.com/in/liambyrnenz",
+        "colour": "#0173B2"
       }
     ]
   },
   {
     "image_name": "soundcloud.png",
     "title": "SOUNDCLOUD",
-    "text": "I like making music. Why not have a listen on my %0?",
+    "text": "I like making music. Why not have a listen on my (%link)?",
     "links": [
       {
         "name": "SoundCloud",
-        "link": "https://soundcloud.com/brnebeats"
+        "link": "https://soundcloud.com/brnebeats",
+        "colour": "#FF6700"
       }
     ]
   },
   {
     "image_name": "twitter.png",
     "title": "TWITTER",
-    "text": "Follow me on %0.",
+    "text": "Follow me on (%link).",
     "links": [
       {
         "name": "Twitter",
-        "link": "https://twitter.com/liambyrnenz"
+        "link": "https://twitter.com/liambyrnenz",
+        "colour": "#2DAAE1"
       }
     ]
   },
   {
     "image_name": "meetup.png",
     "title": "MEETUP",
-    "text": "See my profile on %0.",
+    "text": "See my profile on (%link).",
     "links": [
       {
         "name": "Meetup",
-        "link": "https://www.meetup.com/en-AU/members/235913087"
+        "link": "https://www.meetup.com/en-AU/members/235913087",
+        "colour": "#BE1E2D"
       }
     ]
   }

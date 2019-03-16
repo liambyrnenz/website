@@ -1,61 +1,30 @@
 import React from 'react';
 
-import AlpheroImage from "../assets/alphero.png";
-import AppleImage from "../assets/apple.png";
-import GithubImage from "../assets/github.png";
-import LinkedinImage from "../assets/linkedin.png";
-import MeImage from "../assets/me.png";
-import MeetupImage from "../assets/meetup.png";
-import SoundcloudImage from "../assets/soundcloud.png";
-import TwitterImage from "../assets/twitter.png";
-
 class TileService {
 
-  static imagesInOrder() {
-    return [MeImage, AlpheroImage, AppleImage, GithubImage, LinkedinImage, SoundcloudImage, TwitterImage, MeetupImage];
-  }
+  /**
+   * Take some text with link markers (%link) and replace them with JSX links.
+   * @param {text} text string of text with (%link) markers
+   * @param {links} links array of strings and JSX links replacing markers
+   */
+  static linkify(text, links) {
+    if (!links) return text;
 
-  // TODO link colours
-  static textInOrder() {
-    return [
+    let components = text.split("(%link)");
+    if (links.length + 1 !== components.length) {
+      console.log("Text does not have the same number of link markers as links provided")
+      return text;
+    }
 
-      // MeImage
-      (<span>Junior software engineer with a focus on pushing the boundaries of mobile innovation.</span>), 
-
-      // AlpheroImage
-      (<span><a href="https://alphero.com" target="_blank" rel="noopener noreferrer" style={{color: "#37BEB9"}}>Alphero</a>, a digital services company which makes beautiful mobile apps and websites.</span>), 
-
-      // AppleImage
-      (<span>An iOS developer, making apps for multiple clients across many sectors in New Zealand.</span>), 
-
-      // GithubImage
-      (<span>Check out my projects on <a href="https://github.com/liambyrnenz" target="_blank" rel="noopener noreferrer">GitHub</a>.</span>), 
-
-      // LinkedinImage
-      (<span>Connect with me on <a href="https://linkedin.com/in/liambyrnenz" target="_blank" rel="noopener noreferrer" style={{color: "#0173B2"}}>LinkedIn</a>.</span>),
-      
-      // SoundcloudImage
-      (<span>I like making music. Why not have a listen on my <a href="https://soundcloud.com/brnebeats" target="_blank" rel="noopener noreferrer" style={{color: "#FF6700"}}>SoundCloud</a>?</span>), 
-
-      // TwitterImage
-      (<span>Follow me on <a href="https://twitter.com/liambyrnenz" target="_blank" rel="noopener noreferrer" style={{color: "#2DAAE1"}}>Twitter</a>.</span>), 
-
-      // MeetupImage
-      (<span>See my profile on <a href="https://www.meetup.com/en-AU/members/235913087/" target="_blank" rel="noopener noreferrer" style={{color: "#BE1E2D"}}>Meetup</a>.</span>)
-    ]
-  }
-
-  static titlesInOrder() {
-    return [
-      "I AM A...", 
-      "I WORK AT...", 
-      "I WORK AS...", 
-      "GITHUB", 
-      "LINKEDIN", 
-      "SOUNDCLOUD", 
-      "TWITTER", 
-      "MEETUP"
-    ]
+    for (var i = 0; i < links.length; i++) {
+      let link = links[i];
+      components.splice(i + 1, 0, 
+        <a href={link.link} target="_blank" rel="noopener noreferrer" style={{color: link.colour}}>
+          {link.name}
+        </a>
+      );
+    }
+    return <span>{components}</span>;
   }
 
 }

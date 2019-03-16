@@ -1,35 +1,38 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-import TileService from "../../services/TileService";
-
 import { Header, Tile, TileOverlay, TileContainer, Label, Grid } from '../../components';
 
+import TileService from '../../services/TileService';
+
+const data = require("../../resources/home.json")
+
+// Home page with tile grid
 class Home extends Component {
 
   getTiles() {
     var tiles = [];
-    let images = TileService.imagesInOrder(),
-        text = TileService.textInOrder(),
-        titles = TileService.titlesInOrder();
 
-    for (var i = 0; i < images.length; i++) {
+    for (var i = 0; i < data.length; i++) {
+      let tile = data[i];
       tiles.push(
-      
-      <TileContainer style={
-        {
-          animation: 'fadein 1s',
-          animationDelay: `${0.5 + (0.1 * (i + 1))}s`,
-          animationFillMode: 'both'
-        }
-      }>
-        <Tile>
-          <TileOverlay image={images[i]}/>
-          <Label type="title" text={titles[i]} />
-          <Label type="primary" text={text[i]} />
-        </Tile>
-      </TileContainer>
-      
+
+        <TileContainer style={
+          {
+            animation: 'fadein 1s',
+            animationDelay: `${0.5 + (0.1 * (i + 1))}s`,
+            animationFillMode: 'both'
+          }
+        }>
+          <Tile>
+            <TileOverlay image={tile.image_name} />
+            <Label type="title" text={tile.title} />
+            <Label type="primary" text={
+              TileService.linkify(tile.text, tile.links)
+            } />
+          </Tile>
+        </TileContainer>
+
       );
     }
     return tiles;

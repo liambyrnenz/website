@@ -7,8 +7,9 @@ import './TileOverlay.css';
 class TileOverlay extends Component {
   
   render() {
+    let image = require("../../assets/" + this.props.image)
     return (
-      <div className="cover" style={{backgroundImage: "url(" + this.props.image + ")"}}>
+      <div className="cover" style={{backgroundImage: "url(" + image + ")"}}>
         {this.props.children}
       </div>
     );
