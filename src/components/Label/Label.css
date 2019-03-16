@@ -35,26 +35,26 @@ a:hover {
 
 }
 
-@media only screen and (min-width: 680px) and (max-width: 1280px) {
+@media only screen and (min-width: 720px) and (max-width: 960px) {
 
   .primary {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   
   .title {
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
 
 }
 
-@media only screen and (min-width: 540px) and (max-width: 680px) {
+@media only screen and (min-width: 540px) and (max-width: 720px) {
 
   .primary {
-    font-size: 1.75vw;
+    font-size: 2.5vw;
   }
   
   .title {
-    font-size: 1.25vw;
+    font-size: 2vw;
   }
 
 }
