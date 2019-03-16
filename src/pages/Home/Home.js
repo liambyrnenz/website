@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-import { Header, Tile, TileOverlay, TileContainer, Label, Grid } from '../../components';
+import { Header, Banner, Tile, TileOverlay, TileContainer, Label, Grid } from '../../components';
 
 import TileService from '../../services/TileService';
 
@@ -10,11 +10,26 @@ const data = require("../../resources/home.json")
 // Home page with tile grid
 class Home extends Component {
 
+  getBanners() {
+    var banners = [];
+    if (!data.banners) return banners;
+
+    for (var i = 0; i < data.banners.length; i++) {
+      let banner = data.banners[i];
+
+      banners.push(
+        <Banner text={banner.text} colour={banner.colour}/>
+      )
+    }
+
+    return banners;
+  }
+
   getTiles() {
     var tiles = [];
 
-    for (var i = 0; i < data.length; i++) {
-      let tile = data[i];
+    for (var i = 0; i < data.tiles.length; i++) {
+      let tile = data.tiles[i];
       tiles.push(
 
         <TileContainer style={
@@ -42,6 +57,7 @@ class Home extends Component {
     return (
       <div>
         <Header />
+        {this.getBanners()}
         <Grid>
           {this.getTiles()}
         </Grid>
