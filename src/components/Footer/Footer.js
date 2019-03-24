@@ -8,8 +8,8 @@ class Footer extends Component {
     return (
       <div className="footer">
         <span className="footer-text">
-          Created from scratch by Liam Byrne.<br/>
-          2019 - b1.0.9
+          Created by Liam Byrne.<br/>
+          2019 - v1.0b10
         </span>
       </div>
     );

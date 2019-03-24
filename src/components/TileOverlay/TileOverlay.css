@@ -5,3 +5,20 @@
   background-size: cover;
   position: absolute;
 }
+
+.ic_arrowup {
+  position: absolute;
+  left: 46%;
+  top: 92%;
+  width: 8%;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .ic_arrowup {
+    opacity: 0.5;
+    transition: all 1s;
+  }
+
+}
