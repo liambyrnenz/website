@@ -17,8 +17,7 @@
 @media only screen and (max-width: 1280px) {
 
   .ic_arrowup {
-    opacity: 0.5;
-    transition: all 1s;
+    animation: flashfade_half 3s 3s infinite;
   }
 
 }
