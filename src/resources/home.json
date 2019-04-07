@@ -30,7 +30,7 @@
         {
           "name": "GitHub",
           "link": "https://github.com/liambyrnenz",
-          "colour": "#FFFFFF99"
+          "colour": "#A6A6A6"
         }
       ]
     },
@@ -42,7 +42,7 @@
         {
           "name": "LinkedIn",
           "link": "https://linkedin.com/in/liambyrnenz",
-          "colour": "#0173B2"
+          "colour": "#01A5FE"
         }
       ]
     },
@@ -78,7 +78,7 @@
         {
           "name": "Meetup",
           "link": "https://www.meetup.com/en-AU/members/235913087",
-          "colour": "#BE1E2D"
+          "colour": "#E34F5D"
         }
       ]
     }
