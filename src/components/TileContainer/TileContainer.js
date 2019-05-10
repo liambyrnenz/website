@@ -7,7 +7,7 @@ class TileContainer extends Component {
   // To detect taps on mobile, use state to track whether the overlay is
   // being presented or not. On a click or tap, change the CSS class
   // so the overlay is animated away.
-  // TODO improve solution
+  // TODO improve solution (media hover)
 
   constructor(props) {
     super(props);

@@ -71,6 +71,18 @@
       ]
     },
     {
+      "image_name": "instagram.png",
+      "title": "INSTAGRAM",
+      "text": "Check out my (%link).",
+      "links": [
+        {
+          "name": "Instagram",
+          "link": "https://instagram.com/liambyrnenz",
+          "colour": "#C984F4"
+        }
+      ]
+    },
+    {
       "image_name": "meetup.png",
       "title": "MEETUP",
       "text": "See my profile on (%link).",
