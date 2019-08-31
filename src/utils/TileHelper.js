@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TileService {
+class TileHelper {
 
   /**
    * Take some text with link markers (%link) and replace them with JSX links.
@@ -29,4 +29,4 @@ class TileService {
 
 }
 
-export default TileService;
+export default TileHelper;
