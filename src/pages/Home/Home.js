@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Route, NavLink, HashRouter } from 'react-router-dom';
+
 import './Home.css';
 
 import { Banner, Footer, Grid, Header, Label, Tile, TileContainer, TileOverlay } from '../../components';
+import { PageTest } from '../../pages';
 
 import TileService from '../../services/TileService';
 
@@ -18,7 +21,7 @@ class Home extends Component {
       let banner = data.banners[i];
 
       banners.push(
-        <Banner text={banner.text} colour={banner.colour}/>
+        <Banner text={banner.text} colour={banner.colour} />
       )
     }
 
@@ -53,16 +56,25 @@ class Home extends Component {
     return tiles;
   }
 
+  loadPage() {
+
+  }
+
   render() {
     return (
-      <div>
-        <Header />
-        {this.getBanners()}
-        <Grid>
-          {this.getTiles()}
-        </Grid>
-        <Footer />
-      </div>
+      <HashRouter>
+        <div>
+          <Header />
+          {this.getBanners()}
+          <Grid>
+            {this.getTiles()}
+          </Grid>
+          <p><NavLink to="/pagetest">Test</NavLink></p>
+          <Route exact path="/" Component={Home} />
+          <Route path="/pagetest" component={PageTest} />
+          <Footer />
+        </div>
+      </HashRouter>
     );
   }
 
