@@ -3,7 +3,7 @@ import './Home.css';
 
 import { Banner, Footer, Grid, Header, Label, Tile, TileContainer, TileOverlay } from '../../components';
 
-import TileService from '../../services/TileService';
+import TileHelper from '../../utils/TileHelper';
 
 const data = require("../../resources/home.json")
 
@@ -43,7 +43,7 @@ class Home extends Component {
             <TileOverlay image={tile.image_name} />
             <Label type="title" text={tile.title} />
             <Label type="primary" text={
-              TileService.linkify(tile.text, tile.links)
+              TileHelper.linkify(tile.text, tile.links)
             } />
           </Tile>
         </TileContainer>
