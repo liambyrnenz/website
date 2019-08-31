@@ -9,9 +9,7 @@ class PageTest extends Component {
   render() {
     return (
       <div>
-        <Header />
         Hi!
-        <Footer />
       </div>
     );
   }

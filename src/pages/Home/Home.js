@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Route, NavLink, HashRouter } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 
 import './Home.css';
 
-import { Banner, Footer, Grid, Header, Label, Tile, TileContainer, TileOverlay } from '../../components';
+import { Grid, Label, Tile, TileContainer, TileOverlay } from '../../components';
 import { PageTest } from '../../pages';
 
 import TileHelper from '../../utils/TileHelper';
@@ -12,21 +12,6 @@ const data = require("../../resources/home.json")
 
 // Home page with tile grid
 class Home extends Component {
-
-  getBanners() {
-    var banners = [];
-    if (!data.banners) return banners;
-
-    for (var i = 0; i < data.banners.length; i++) {
-      let banner = data.banners[i];
-
-      banners.push(
-        <Banner text={banner.text} colour={banner.colour} />
-      )
-    }
-
-    return banners;
-  }
 
   getTiles() {
     var tiles = [];
@@ -56,25 +41,16 @@ class Home extends Component {
     return tiles;
   }
 
-  loadPage() {
-
-  }
-
   render() {
     return (
-      <HashRouter>
-        <div>
-          <Header />
-          {this.getBanners()}
-          <Grid>
-            {this.getTiles()}
-          </Grid>
-          <p><NavLink to="/pagetest">Test</NavLink></p>
-          <Route exact path="/" Component={Home} />
-          <Route path="/pagetest" component={PageTest} />
-          <Footer />
-        </div>
-      </HashRouter>
+      <div>
+        <Grid>
+          {this.getTiles()}
+        </Grid>
+        <p><NavLink to="/pagetest">Test</NavLink></p>
+        <Route exact path="/" Component={Home} />
+        <Route path="/pagetest" component={PageTest} />
+      </div>
     );
   }
 
