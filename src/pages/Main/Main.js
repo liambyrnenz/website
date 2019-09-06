@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import './Main.css';
 
 import { Banner, Footer, Header } from '../../components';
-import { Home } from '../../pages';
+import { Home, PageTest } from '../../pages';
 
 const data = require("../../resources/main.json")
 
@@ -34,7 +34,11 @@ class Main extends Component {
         <div>
           <Header />
           {this.getBanners()}
-          <Home />
+          {/* <Home /> */}
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/pagetest" component={PageTest} />
+          </Switch>
           <Footer />
         </div>
       </HashRouter>

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Home.css';
 
 import { Grid, Label, Tile, TileContainer, TileOverlay } from '../../components';
-import { PageTest } from '../../pages';
 
 import TileHelper from '../../utils/TileHelper';
 
@@ -48,8 +47,6 @@ class Home extends Component {
           {this.getTiles()}
         </Grid>
         <p><NavLink to="/pagetest">Test</NavLink></p>
-        <Route exact path="/" Component={Home} />
-        <Route path="/pagetest" component={PageTest} />
       </div>
     );
   }
