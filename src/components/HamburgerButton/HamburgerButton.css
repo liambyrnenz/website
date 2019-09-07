@@ -1,5 +1,6 @@
 .hamburger-container {
   margin: auto 0;
+  transition: all 0.25s;
 }
 
 .hamburger-bar {
@@ -7,4 +8,10 @@
   height: 5px;
   margin-bottom: 4px;
   width: 36px;
+  transform: scale(1.0);
+}
+
+.hamburger-container:hover {
+  transform: scale(1.25);
+  transition: all 0.25s;
 }
