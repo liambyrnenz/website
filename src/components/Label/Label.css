@@ -14,13 +14,13 @@ a:hover {
   position: absolute;
 }
 
-.primary {
+.logo-primary {
   font-size: 1.5em;
   padding: 0.75em;
   top: 15%;
 }
 
-.title {
+.logo-title {
   font-size: 1em;
   margin: 0.5em 0;
   padding: 0 1em;
@@ -37,11 +37,11 @@ a:hover {
 
 @media only screen and (min-width: 720px) and (max-width: 960px) {
 
-  .primary {
+  .logo-primary {
     font-size: 2vw;
   }
   
-  .title {
+  .logo-title {
     font-size: 1.5vw;
   }
 
@@ -49,11 +49,11 @@ a:hover {
 
 @media only screen and (min-width: 540px) and (max-width: 720px) {
 
-  .primary {
+  .logo-primary {
     font-size: 2.5vw;
   }
   
-  .title {
+  .logo-title {
     font-size: 2vw;
   }
 
@@ -61,11 +61,11 @@ a:hover {
 
 @media only screen and (min-width: 480px) and (max-width: 540px) {
 
-  .primary {
+  .logo-primary {
     font-size: 2vw;
   }
   
-  .title {
+  .logo-title {
     font-size: 1.5vw;
   }
 

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import './Home.css';
 
-import { Banner, Footer, Grid, Header, Label, Tile, TileContainer, TileOverlay } from '../../components';
+import { Grid, Label, Tile, TileContainer, TileOverlay } from '../../components';
 
 import TileHelper from '../../utils/TileHelper';
 
@@ -9,21 +11,6 @@ const data = require("../../resources/home.json")
 
 // Home page with tile grid
 class Home extends Component {
-
-  getBanners() {
-    var banners = [];
-    if (!data.banners) return banners;
-
-    for (var i = 0; i < data.banners.length; i++) {
-      let banner = data.banners[i];
-
-      banners.push(
-        <Banner text={banner.text} colour={banner.colour}/>
-      )
-    }
-
-    return banners;
-  }
 
   getTiles() {
     var tiles = [];
@@ -56,12 +43,10 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
-        {this.getBanners()}
         <Grid>
           {this.getTiles()}
         </Grid>
-        <Footer />
+        <p><NavLink to="/pagetest">Test</NavLink></p>
       </div>
     );
   }

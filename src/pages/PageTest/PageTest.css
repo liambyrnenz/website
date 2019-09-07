@@ -1,0 +1,19 @@
+.title {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5em;
+
+  animation: fadein 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.content {
+  font-size: 22px;
+  margin: 1.5em 0;
+
+  animation: fadein 2s;
+  animation-delay: 0.75s;
+  animation-fill-mode: both;
+}
