@@ -14,7 +14,7 @@ class Header extends Component {
         <div className="header-logo">
           <Logo />
         </div>
-        <HamburgerButton />
+        <HamburgerButton onButtonClicked={() => alert("Hi!")} />
       </div>
     );
   }
