@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import './Header.css';
 
+import HamburgerButton from '../HamburgerButton';
 import Logo from '../Logo';
+
+import './Header.css';
 
 // Header bar across the top of the page, with the title logo and any additional information.
 class Header extends Component {
@@ -12,6 +14,7 @@ class Header extends Component {
         <div className="header-logo">
           <Logo />
         </div>
+        <HamburgerButton />
       </div>
     );
   }

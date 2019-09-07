@@ -1,0 +1,10 @@
+.hamburger-container {
+  margin: auto 0;
+}
+
+.hamburger-bar {
+  background-color: white;
+  height: 5px;
+  margin-bottom: 4px;
+  width: 36px;
+}
