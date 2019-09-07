@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
 
@@ -46,7 +46,7 @@ class Home extends Component {
         <Grid>
           {this.getTiles()}
         </Grid>
-        {/* <p><NavLink to="/pagetest">Test</NavLink></p> */}
+        {/* <p><Link to="/pagetest">Test</Link></p> */}
       </div>
     );
   }
