@@ -12,6 +12,6 @@
 }
 
 .hamburger-container:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   transition: all 0.25s;
 }
