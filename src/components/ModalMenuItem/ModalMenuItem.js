@@ -7,6 +7,14 @@ import RightArrowIcon from "../../assets/ic_arrowright.png"
 
 class ModalMenuItem extends Component {
 
+  getImage() {
+    if (this.props.route === "/") {
+      return <img src={RightArrowIcon} alt="Menu Item Selector" class="modal-menu-item-image" />
+    } else {
+      return <div class="modal-menu-item-image" />
+    }
+  }
+
   render() {
     return (
       <NavLink to="/" onClick={() => this.props.onItemClicked()}>
@@ -17,7 +25,7 @@ class ModalMenuItem extends Component {
             animationFillMode: "both"
           }
         }>
-          <img src={RightArrowIcon} alt="Menu Item Selector" class="modal-menu-item-image" />
+          {this.getImage()}
           <div href="/" className="modal-menu-item-label" style={{ color: this.props.colour }}>
             {this.props.label}
           </div>
