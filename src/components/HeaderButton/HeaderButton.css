@@ -13,61 +13,34 @@
   transition: all 0.25s;
 }
 
+/* ======================================================================== */
+
 .hamburger-bar {
   background-color: white;
   height: 5px;
-  margin-bottom: 4px;
   width: 36px;
-}
 
-.hamburger-bar#hamburger-bar-1 {
-  animation: move-up-4 0.5s both;
-  animation-delay: 0.25s;
-}
-
-.hamburger-bar#hamburger-bar-3 {
-  animation: move-down-4 0.5s both;
-  animation-delay: 0.25s;
+  margin-bottom: 4px;
+  transform: rotate(0deg);
+  transition: all 0.25s;
 }
 
 .hamburger-cross-1 {
   background-color: white;
   height: 5px;
-  margin-bottom: -4px;
   width: 36px;
 
-  animation: rotate-positive-45 0.5s both;
-  animation-delay: 0.25s;
+  margin-bottom: -4px;
+  transform: rotate(45deg);
+  transition: margin-bottom 0.25s, transform 0.25s 0.25s;
 }
 
 .hamburger-cross-2 {
   background-color: white;
   height: 5px;
-  margin-bottom: 4px;
   width: 36px;
 
-  animation: rotate-negative-45 0.5s both;
-  animation-delay: 0.25s;
-}
-
-/* ======================================================================== */
-
-@keyframes move-up-4 {
-  from { margin-bottom: -4px }
-  to { margin-bottom: 4px }
-}
-
-@keyframes move-down-4 {
-  from { margin-top: -8px }
-  to { margin-top: 0 }
-}
-
-@keyframes rotate-positive-45 {
-  from { transform: rotate(0deg) }
-  to { transform: rotate(45deg) }
-}
-
-@keyframes rotate-negative-45 {
-  from { transform: rotate(0deg) }
-  to { transform: rotate(-45deg) }
+  margin-bottom: 4px;
+  transform: rotate(-45deg);
+  transition: margin-bottom 0.25s, transform 0.25s 0.25s;
 }
