@@ -1,5 +1,7 @@
 .hamburger-container {
   margin: auto 0;
+
+  animation: fadein 1s;
   transform: scale(1.0);
   transition: all 0.25s;
 }
@@ -21,8 +23,9 @@
   width: 36px;
 
   margin-bottom: 4px;
+  opacity: 1;
   transform: rotate(0deg);
-  transition: all 0.25s;
+  transition: transform 0.25s, margin-bottom 0.25s 0.25s, opacity 0.25s 0.25s;
 }
 
 .hamburger-cross-1 {
@@ -43,4 +46,9 @@
   margin-bottom: 4px;
   transform: rotate(-45deg);
   transition: margin-bottom 0.25s, transform 0.25s 0.25s;
+}
+
+.hamburger-bar-invisible {
+  opacity: 0;
+  transform: opacity 0.25s;
 }

@@ -17,6 +17,8 @@ class HeaderButton extends Component {
     } else if (this.props.close) {
       if (id === 1) {
         return "hamburger-cross-1";
+      } else if (id === 2) {
+        return "hamburger-bar-invisible";
       } else if (id === 3) {
         return "hamburger-cross-2";
       }
