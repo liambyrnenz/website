@@ -10,11 +10,11 @@ class ModalMenu extends Component {
   render() {
     return (
       <div>
-        <ModalMenuItem label="Home" colour="" id={0}/>
-        <ModalMenuItem label="Experience" colour="#00CCFF" id={1}/>
-        <ModalMenuItem label="Education" colour="#00A537" id={2}/>
-        <ModalMenuItem label="Projects" colour="#FFBC00" id={3}/>
-        <ModalMenuItem label="Volunteering" colour="#FF0000" id={4}/>
+        <ModalMenuItem id={0} label="Home" colour="" active={true} onItemClicked={() => this.props.onItemClicked()}/>
+        <ModalMenuItem id={1} label="Experience" colour="#00CCFF" active={true} onItemClicked={() => this.props.onItemClicked()}/>
+        <ModalMenuItem id={2} label="Education" colour="#00A537" active={true} onItemClicked={() => this.props.onItemClicked()}/>
+        <ModalMenuItem id={3} label="Projects" colour="#FFBC00" active={true} onItemClicked={() => this.props.onItemClicked()}/>
+        <ModalMenuItem id={4} label="Volunteering" colour="#FF0000" active={true} onItemClicked={() => this.props.onItemClicked()}/>
       </div>
     );
   }

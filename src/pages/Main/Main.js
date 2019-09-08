@@ -37,7 +37,7 @@ class Main extends Component {
   // or actual content rendered depending on the current route.
   getMainContent() {
     if (this.state.modalOnScreen) {
-      return <ModalMenu onCloseClicked={() => this.toggleModalMenu()} />;
+      return <ModalMenu onItemClicked={() => this.toggleModalMenu()} />;
     }
 
     return (
