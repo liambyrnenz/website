@@ -8,18 +8,12 @@ import './Header.css';
 // Header bar across the top of the page, with the title logo and any additional information.
 class Header extends Component {
 
-  getLogo() {
-    return (
-      <div className="header-logo">
-        {this.props.showingLogo ? <Logo /> : undefined}
-      </div>
-    )
-  }
-
   render() {
     return (
       <div className="header">
-        {this.getLogo()}
+        <div className="header-logo">
+          <Logo hidden={this.props.hidingLogo}/>
+        </div>
         <HamburgerButton onButtonClicked={() => this.props.onMenuClicked()} />
       </div>
     );

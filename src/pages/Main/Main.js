@@ -33,23 +33,18 @@ class Main extends Component {
     return banners;
   }
 
-  // Load the main content visible on screen. This is usually either the modal menu
-  // or actual content (like the home page.)
+  // Load the main content visible on screen. This is either the modal menu
+  // or actual content rendered depending on the current route.
   getMainContent() {
     if (this.state.modalOnScreen) {
       return <ModalMenu onCloseClicked={() => this.toggleModalMenu()} />;
     }
-    
+
     return (
-      <div>
-        <Header showingLogo={true} onMenuClicked={() => this.toggleModalMenu()} />
-        {this.getBanners()}
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/pagetest" component={PageTest} />
-        </Switch>
-        <Footer />
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/pagetest" component={PageTest} />
+      </Switch>
     );
   }
 
@@ -60,9 +55,10 @@ class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
-          {this.getMainContent()}
-        </div>
+        <Header hidingLogo={this.state.modalOnScreen} onMenuClicked={() => this.toggleModalMenu()} />
+        {this.getBanners()}
+        {this.getMainContent()}
+        <Footer />
       </HashRouter>
     );
   }

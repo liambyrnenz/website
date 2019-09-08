@@ -11,7 +11,7 @@ class ModalMenu extends Component {
   render() {
     return (
       <div>
-        <Header showingLogo={false} onMenuClicked={() => this.props.onCloseClicked()} />
+        ModalMenu
       </div>
     );
   }
