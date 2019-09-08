@@ -8,6 +8,11 @@
   height: 72px;
   margin-right: 1em;
   transform: scale(0.5);
+  visibility: hidden;
+}
+
+.modal-menu-item-active .modal-menu-item-image {
+  visibility: visible;
 }
 
 .modal-menu-item-label {
