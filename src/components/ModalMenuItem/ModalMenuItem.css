@@ -3,8 +3,15 @@
   padding-bottom: 1.5em;
 }
 
+.modal-menu-item-image {
+  width: 48px;
+  height: 72px;
+  margin-right: 1em;
+  transform: scale(0.5);
+}
+
 .modal-menu-item-label {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 
   font-size: 64px;
   font-weight: bold;

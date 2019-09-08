@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './ModalMenuItem.css';
 
+import RightArrowIcon from "../../assets/ic_arrowright.png"
+
 class ModalMenuItem extends Component {
 
   render() {
@@ -13,9 +15,10 @@ class ModalMenuItem extends Component {
           animationFillMode: "both"
         }
       }>
-        <a className="modal-menu-item-label" style={{ color: this.props.colour }}>
+        <img src={RightArrowIcon} alt="Menu Item Selector" class="modal-menu-item-image"/>
+        <div href="/" className="modal-menu-item-label" style={{ color: this.props.colour }}>
           {this.props.label}
-        </a>
+        </div>
       </div>
     );
   }
