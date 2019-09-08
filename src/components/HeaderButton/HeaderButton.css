@@ -4,6 +4,10 @@
   transition: all 0.25s;
 }
 
+.hamburger-container-padded {
+  padding: 1em 0;
+}
+
 .hamburger-container:hover {
   transform: scale(1.15);
   transition: all 0.25s;

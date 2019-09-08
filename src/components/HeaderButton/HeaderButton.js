@@ -14,7 +14,7 @@ class HeaderButton extends Component {
       );
     } else if (this.props.close) {
       return (
-        <div className="hamburger-container" onClick={this.props.onButtonClicked}>
+        <div className="hamburger-container hamburger-container-padded" onClick={this.props.onButtonClicked}>
           <div className="hamburger-cross-1"></div>
           <div className="hamburger-cross-2"></div>
         </div>
