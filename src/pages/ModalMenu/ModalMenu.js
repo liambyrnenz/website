@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Header } from '../../components';
+import { ModalMenuItem } from '../../components';
 
 import './ModalMenu.css';
 
@@ -11,7 +11,11 @@ class ModalMenu extends Component {
   render() {
     return (
       <div>
-        ModalMenu
+        <ModalMenuItem label="Home" colour="" id={0}/>
+        <ModalMenuItem label="Experience" colour="" id={1}/>
+        <ModalMenuItem label="Education" colour="" id={2}/>
+        <ModalMenuItem label="Projects" colour="" id={3}/>
+        <ModalMenuItem label="Volunteering" colour="" id={4}/>
       </div>
     );
   }

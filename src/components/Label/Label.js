@@ -6,7 +6,7 @@ class Label extends Component {
 
   render() {
     return (
-      <div className={"logo-" + this.props.type + " logo-text"}>
+      <div className={`logo-${this.props.type} logo-text`}>
         {this.props.text}
       </div>
     );
