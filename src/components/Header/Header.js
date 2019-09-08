@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import HamburgerButton from '../HamburgerButton';
+import HeaderButton from '../HeaderButton';
 import Logo from '../Logo';
 
 import './Header.css';
@@ -14,7 +14,7 @@ class Header extends Component {
         <div className="header-logo">
           <Logo hidden={this.props.hidingLogo}/>
         </div>
-        <HamburgerButton menu={this.props.menuButton} close={this.props.closeButton} onButtonClicked={() => this.props.onMenuClicked()} />
+        <HeaderButton menu={this.props.menuButton} close={this.props.closeButton} onButtonClicked={() => this.props.onMenuClicked()} />
       </div>
     );
   }

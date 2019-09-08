@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './HamburgerButton.css';
+import './HeaderButton.css';
 
-class HamburgerButton extends Component {
+class HeaderButton extends Component {
 
   render() {
     if (this.props.menu) {
@@ -23,4 +23,4 @@ class HamburgerButton extends Component {
   }
 }
 
-export default HamburgerButton;
+export default HeaderButton;
