@@ -13,9 +13,9 @@ class ModalMenuItem extends Component {
           animationFillMode: "both"
         }
       }>
-        <div className="modal-menu-item-label">
+        <a className="modal-menu-item-label" style={{ color: this.props.colour }}>
           {this.props.label}
-        </div>
+        </a>
       </div>
     );
   }

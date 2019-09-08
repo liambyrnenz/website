@@ -12,10 +12,10 @@ class ModalMenu extends Component {
     return (
       <div>
         <ModalMenuItem label="Home" colour="" id={0}/>
-        <ModalMenuItem label="Experience" colour="" id={1}/>
-        <ModalMenuItem label="Education" colour="" id={2}/>
-        <ModalMenuItem label="Projects" colour="" id={3}/>
-        <ModalMenuItem label="Volunteering" colour="" id={4}/>
+        <ModalMenuItem label="Experience" colour="#00CCFF" id={1}/>
+        <ModalMenuItem label="Education" colour="#00A537" id={2}/>
+        <ModalMenuItem label="Projects" colour="#FFBC00" id={3}/>
+        <ModalMenuItem label="Volunteering" colour="#FF0000" id={4}/>
       </div>
     );
   }
