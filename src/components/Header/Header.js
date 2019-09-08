@@ -14,7 +14,7 @@ class Header extends Component {
         <div className="header-logo">
           <Logo hidden={this.props.hidingLogo}/>
         </div>
-        <HamburgerButton onButtonClicked={() => this.props.onMenuClicked()} />
+        <HamburgerButton menu={this.props.menuButton} close={this.props.closeButton} onButtonClicked={() => this.props.onMenuClicked()} />
       </div>
     );
   }

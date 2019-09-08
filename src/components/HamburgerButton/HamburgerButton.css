@@ -11,6 +11,22 @@
   transform: scale(1.0);
 }
 
+.hamburger-cross-1 {
+  background-color: white;
+  height: 5px;
+  margin-bottom: -4px;
+  width: 36px;
+  transform: rotate(45deg);
+}
+
+.hamburger-cross-2 {
+  background-color: white;
+  height: 5px;
+  margin-bottom: 4px;
+  width: 36px;
+  transform: rotate(-45deg);
+}
+
 .hamburger-container:hover {
   transform: scale(1.15);
   transition: all 0.25s;

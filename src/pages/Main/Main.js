@@ -55,7 +55,10 @@ class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <Header hidingLogo={this.state.modalOnScreen} onMenuClicked={() => this.toggleModalMenu()} />
+        <Header hidingLogo={this.state.modalOnScreen}
+          menuButton={!this.state.modalOnScreen}
+          closeButton={this.state.modalOnScreen}
+          onMenuClicked={() => this.toggleModalMenu()} />
         {this.getBanners()}
         {this.getMainContent()}
         <Footer />
