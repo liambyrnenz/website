@@ -20,3 +20,35 @@
   font-weight: bold;
   margin: 0;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 540px) {
+
+  .modal-menu-item {
+    padding-bottom: 1em;
+  }
+
+  .modal-menu-item-image {
+    display: none;
+  }
+  
+  .modal-menu-item-label {
+    font-size: 48px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .modal-menu-item {
+    padding-bottom: 1em;
+  }
+
+  .modal-menu-item-image {
+    display: none;
+  }
+  
+  .modal-menu-item-label {
+    font-size: 36px;
+  }
+
+}
