@@ -13,6 +13,10 @@
   animation: fadein 2s;
 }
 
+a.logo-link {
+  text-decoration: none;
+}
+
 .text-container {
   padding: 1em 0;
 }
