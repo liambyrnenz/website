@@ -43,7 +43,10 @@ class Main extends Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/ContentPage" component={ContentPage} />
+        <Route path="/experience" render={() => <ContentPage content="experience" />} />
+        <Route path="/education" render={() => <ContentPage content="education" />} />
+        <Route path="/projects" render={() => <ContentPage content="projects" />} />
+        <Route path="/volunteering" render={() => <ContentPage content="volunteering" />} />
       </Switch>
     );
   }

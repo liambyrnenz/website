@@ -45,7 +45,6 @@ class Home extends Component {
         <Grid>
           {this.getTiles()}
         </Grid>
-        {/* <p><Link to="/ContentPage">Test</Link></p> */}
       </div>
     );
   }
