@@ -3,6 +3,14 @@
   padding-bottom: 1.5em;
 }
 
+a.modal-menu-item-navlink {
+  text-decoration: none;
+}
+
+.modal-menu-item-label:hover {
+  text-decoration: underline;
+}
+
 .modal-menu-item-image {
   width: 48px;
   height: 72px;
@@ -19,6 +27,14 @@
   font-size: 64px;
   font-weight: bold;
   margin: 0;
+}
+
+@media only screen and (max-width: 540px) {
+
+  .modal-menu-item-active .modal-menu-item-label {
+    text-decoration: underline;
+  }
+
 }
 
 @media only screen and (min-width: 360px) and (max-width: 540px) {

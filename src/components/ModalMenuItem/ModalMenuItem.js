@@ -9,7 +9,7 @@ class ModalMenuItem extends Component {
 
   render() {
     return (
-      <NavLink exact to={this.props.route} activeClassName="modal-menu-item-active" onClick={() => this.props.onItemClicked()}>
+      <NavLink exact to={this.props.route} className="modal-menu-item-navlink" activeClassName="modal-menu-item-active" onClick={() => this.props.onItemClicked()}>
         <div className="modal-menu-item" style={
           {
             animation: "fadein 1s",
