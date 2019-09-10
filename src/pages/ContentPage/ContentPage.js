@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import './PageTest.css';
+import './ContentPage.css';
 
-class PageTest extends Component {
+class ContentPage extends Component {
 
   render() {
     return (
@@ -26,4 +26,4 @@ class PageTest extends Component {
 
 }
 
-export default PageTest;
+export default ContentPage;

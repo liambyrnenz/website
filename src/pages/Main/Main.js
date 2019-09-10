@@ -4,7 +4,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import './Main.css';
 
 import { Banner, Footer, Header } from '../../components';
-import { Home, ModalMenu, PageTest } from '../../pages';
+import { Home, ModalMenu, ContentPage } from '../../pages';
 
 const data = require("../../resources/main.json")
 
@@ -43,7 +43,7 @@ class Main extends Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/pagetest" component={PageTest} />
+        <Route path="/ContentPage" component={ContentPage} />
       </Switch>
     );
   }
