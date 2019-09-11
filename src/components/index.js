@@ -1,4 +1,5 @@
 import Banner from './Banner'
+import ContentPhotoText from './ContentPhotoText'
 import Footer from './Footer'
 import Grid from './Grid';
 import Header from './Header';
@@ -9,4 +10,4 @@ import Tile from './Tile';
 import TileContainer from './TileContainer';
 import TileOverlay from './TileOverlay';
 
-export { Banner, Footer, Grid, Header, Label, Logo, ModalMenuItem, Tile, TileContainer, TileOverlay }
+export { Banner, ContentPhotoText, Footer, Grid, Header, Label, Logo, ModalMenuItem, Tile, TileContainer, TileOverlay }

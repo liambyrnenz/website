@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './ContentPage.css';
+import ContentPhotoText from '../../components/ContentPhotoText';
 
 class ContentPage extends Component {
 
@@ -25,7 +26,8 @@ class ContentPage extends Component {
     return (
       <div>
         <p class="title">{content.title}</p>
-       {this.getContentBlocks(content)}
+        {this.getContentBlocks(content)}
+        <ContentPhotoText />
       </div>
     );
   }
