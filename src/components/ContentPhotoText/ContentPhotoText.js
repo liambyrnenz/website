@@ -10,10 +10,7 @@ class ContentPhotoText extends Component {
       <div className="content-phototext-container">
         <div className="content-phototext-photo" style={
           {
-            backgroundImage: `url(${image})`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover"
+            backgroundImage: `url(${image})`
           }
         }>
         </div>

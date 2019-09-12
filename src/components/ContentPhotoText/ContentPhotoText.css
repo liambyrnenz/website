@@ -5,6 +5,9 @@
 
 .content-phototext-photo {
   background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 33%;
   padding-bottom: 18.5625%;
 }
