@@ -5,8 +5,8 @@
 
 .content-phototext-photo {
   background-color: white;
-  min-width: 33vw;
-  min-height: 18.5625vw;
+  width: 33%;
+  padding-bottom: 18.5625%;
 }
 
 .content-phototext-text {
@@ -14,7 +14,7 @@
   margin-left: 1em;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
 
   .content-phototext-container {
     display: block;
@@ -23,12 +23,11 @@
 
   .content-phototext-photo {
     background-color: white;
-    min-width: 100vw;
-    min-height: 56.25em;
+    width: 100%;
+    padding-bottom: 56.25%;
   }
 
   .content-phototext-text {
-    font-size: 22px;
     margin-left: 0;
     margin-top: 1em;
   }
