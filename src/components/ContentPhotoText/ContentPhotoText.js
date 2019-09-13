@@ -5,7 +5,7 @@ import './ContentPhotoText.css';
 class ContentPhotoText extends Component {
 
   render() {
-    let image = require("../../assets/me.png")
+    let image = require(`../../assets/${this.props.image}`)
     return (
       <div className="content-phototext-container">
         <div className="content-phototext-photo" style={
@@ -15,7 +15,7 @@ class ContentPhotoText extends Component {
         }>
         </div>
         <div className="content-phototext-text">
-          Text
+          {this.props.text}
         </div>
       </div>
     );

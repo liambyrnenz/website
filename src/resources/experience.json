@@ -1,7 +1,18 @@
 {
   "title": "Experience",
   "content": [
-    "Paragraph 1",
-    "Paragraph 2"
+    {
+      "type": "text",
+      "text": "Paragraph 1"
+    },
+    {
+      "type": "text",
+      "text": "Paragraph 2"
+    },
+    {
+      "type": "phototext",
+      "photo": "me.png",
+      "text": "Photo Text"
+    }
   ]
 }

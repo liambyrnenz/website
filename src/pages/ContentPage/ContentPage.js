@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 
+import ContentHelper from '../../utils/ContentHelper';
+
 import './ContentPage.css';
-import ContentPhotoText from '../../components/ContentPhotoText';
 
 class ContentPage extends Component {
 
   getContentBlocks(content) {
     var contentBlocks = [];
     for (var i = 0; i < content.content.length; i++) {
+      let component = ContentHelper.component(content.content[i]);
       contentBlocks.push(
-        <p class="content">
-          {content.content[i]}
-        </p>
+        <div class="content">
+          {component}
+        </div>
       )
     }
     return contentBlocks;
@@ -27,7 +29,6 @@ class ContentPage extends Component {
       <div>
         <p class="title">{content.title}</p>
         {this.getContentBlocks(content)}
-        <ContentPhotoText />
       </div>
     );
   }
