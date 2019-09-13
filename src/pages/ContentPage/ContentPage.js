@@ -24,7 +24,7 @@ class ContentPage extends Component {
       return null;
     }
 
-    let content = require("../../resources/" + this.props.content + ".json");
+    let content = require(`../../resources/${this.props.content}.json`);
     return (
       <div>
         <p class="title">{content.title}</p>

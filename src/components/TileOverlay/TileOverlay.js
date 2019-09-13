@@ -9,9 +9,9 @@ import UpArrowIcon from "../../assets/ic_arrowup.png"
 class TileOverlay extends Component {
   
   render() {
-    let image = require("../../assets/" + this.props.image)
+    let image = require(`../../assets/${this.props.image}`)
     return (
-      <div className="cover" style={{backgroundImage: "url(" + image + ")"}}>
+      <div className="cover" style={{backgroundImage: `url(${image})`}}>
         {this.props.children}
         <img src={UpArrowIcon} alt="Select Icon" className="ic_arrowup"/>
       </div>
