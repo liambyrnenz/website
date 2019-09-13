@@ -10,7 +10,7 @@ class ContentHelper {
    */
   static component(object) {
     if (object.type === "phototext") {
-      return <ContentPhotoText image={object.photo} text={object.text} />
+      return <ContentPhotoText image={object.photo} title={object.title} description={object.description} />
     }
     if (object.type === "text") {
       return <p>{object.text}</p>

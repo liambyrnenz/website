@@ -15,7 +15,12 @@ class ContentPhotoText extends Component {
         }>
         </div>
         <div className="content-phototext-text">
-          {this.props.text}
+          <div className="content-phototext-title">
+            {this.props.title}
+          </div>
+          <div className="content-phototext-description">
+            {this.props.description}
+          </div>
         </div>
       </div>
     );

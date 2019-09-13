@@ -12,7 +12,8 @@
     {
       "type": "phototext",
       "photo": "me.png",
-      "text": "Photo Text"
+      "title": "Title",
+      "description": "Photo Text"
     }
   ]
 }
