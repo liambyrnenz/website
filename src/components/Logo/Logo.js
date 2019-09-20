@@ -7,12 +7,12 @@ class Logo extends Component {
 
   render() {
     return (
-      <Link to="/" className="logo-link">
+      // <Link to="/" className="logo-link">
         <div className={"text-container " + (this.props.hidden ? "invisible" : "visible")}>
           <p className="heading">Liam Byrne</p>
           <p className="subheading">JUNIOR SOFTWARE ENGINEER</p>
         </div>
-      </Link>
+      // </Link>
     );
   }
 
