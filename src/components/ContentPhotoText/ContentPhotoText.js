@@ -10,7 +10,8 @@ class ContentPhotoText extends Component {
       <div className="content-phototext-container">
         <div className="content-phototext-photo" style={
           {
-            backgroundImage: `url(${image})`
+            backgroundImage: `url(${image})`,
+            backgroundSize: `${this.props.croppingOff ? "contain" : "cover"}`
           }
         }>
         </div>
