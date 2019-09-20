@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ContentHelper from '../../utils/ContentHelper';
+import ContentComponentFactory from '../../utils/ContentComponentFactory';
 
 import './ContentPage.css';
 
@@ -9,7 +9,7 @@ class ContentPage extends Component {
   getContentBlocks(content) {
     var contentBlocks = [];
     for (var i = 0; i < content.content.length; i++) {
-      let component = ContentHelper.component(content.content[i]);
+      let component = ContentComponentFactory.make(content.content[i]);
       contentBlocks.push(
         <div class="content">
           {component}
