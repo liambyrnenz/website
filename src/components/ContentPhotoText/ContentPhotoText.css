@@ -7,7 +7,6 @@
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   min-width: 33%;
   padding-bottom: 18.5625%;
 }
@@ -26,7 +25,7 @@
   font-size: 22px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
 
   .content-phototext-container {
     display: block;
