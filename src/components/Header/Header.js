@@ -11,9 +11,8 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <div className="header-logo">
-          <Logo hidden={this.props.hidingLogo}/>
-        </div>
+        <Logo hidden={this.props.hidingLogo} />
+        <div className="header-filler"></div>
         <HeaderButton menu={this.props.menuButton} close={this.props.closeButton} onButtonClicked={() => this.props.onMenuClicked()} />
       </div>
     );
