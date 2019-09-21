@@ -11,7 +11,11 @@ class ContentPage extends Component {
     for (var i = 0; i < content.content.length; i++) {
       let component = ContentComponentFactory.make(content.content[i]);
       contentBlocks.push(
-        <div class="content">
+        <div class="content" style={
+          {
+            animationDelay: `${0.75 + (0.1 * i)}s`
+          }
+        }>
           {component}
         </div>
       )
