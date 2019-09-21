@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Markdown from 'react-markdown';
 
 import './ContentPhotoText.css';
 
@@ -20,7 +21,7 @@ class ContentPhotoText extends Component {
             {this.props.title}
           </div>
           <div className="content-phototext-description">
-            {this.props.description}
+            <Markdown source={this.props.description} />
           </div>
         </div>
       </div>
