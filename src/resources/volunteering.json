@@ -1,7 +1,9 @@
 {
   "title": "Volunteering",
   "content": [
-    "Paragraph 1",
-    "Paragraph 2"
+    {
+      "type": "text",
+      "text": "Coming soon!"
+    }
   ]
 }

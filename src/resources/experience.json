@@ -2,10 +2,6 @@
   "title": "Experience",
   "content": [
     {
-      "type": "text",
-      "text": "Paragraph 1"
-    },
-    {
       "type": "phototext",
       "photo": "alphero_horizontal.png",
       "croppingOff": true,
