@@ -6,7 +6,10 @@ import './ContentPhotoText.css';
 class ContentPhotoText extends Component {
 
   render() {
-    let image = require(`../../assets/${this.props.image}`)
+    let image = ""
+    if (this.props.image) {
+      image = require(`../../assets/${this.props.image}`)
+    }
     return (
       <div className="content-phototext-container">
         <div className="content-phototext-photo" style={
