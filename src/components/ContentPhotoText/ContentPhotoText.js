@@ -23,6 +23,9 @@ class ContentPhotoText extends Component {
           <div className="content-phototext-title">
             {this.props.title}
           </div>
+          <div className="content-phototext-subtitle">
+            {this.props.subtitle}
+          </div>
           <div className="content-phototext-description">
             <Markdown source={this.props.description} />{/*escapeHtml={false} />*/}
           </div>

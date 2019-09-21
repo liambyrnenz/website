@@ -10,7 +10,8 @@ class ContentComponentFactory {
    */
   static make(object) {
     if (object.type === "phototext") {
-      return <ContentPhotoText image={object.photo} croppingOff={object.croppingOff} title={object.title} description={object.description} />
+      return <ContentPhotoText image={object.photo} croppingOff={object.croppingOff}
+        title={object.title} subtitle={object.subtitle} description={object.description} />
     }
     if (object.type === "text") {
       return <p>{object.text}</p>
