@@ -22,9 +22,13 @@
 }
 
 .content-phototext-subtitle {
+  background-color: white;
+  /* display: inline-block; */
+  color: black;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  padding: 0.25em;
   text-transform: uppercase;
 }
 
