@@ -1,0 +1,15 @@
+.content-cent-heading-container {
+  text-align: center;
+  padding: 0 1em 1.5em 1em;
+}
+
+.content-cent-heading-icon {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.content-cent-heading-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}

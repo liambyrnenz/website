@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ContentPhotoText } from '../components';
+import { ContentCenteredHeading, ContentPhotoText } from '../components';
 
 class ContentComponentFactory {
 
@@ -9,6 +9,10 @@ class ContentComponentFactory {
    * @param {object} object to parse component from 
    */
   static make(object) {
+    if (object.type === "cent-heading") {
+      return <ContentCenteredHeading icon={object.icon} backgroundColour={object.backgroundColour}
+        heading={object.heading} subheading={object.subheading} />
+    }
     if (object.type === "phototext") {
       return <ContentPhotoText image={object.photo} croppingOff={object.croppingOff}
         title={object.title} subtitle={object.subtitle} description={object.description} />

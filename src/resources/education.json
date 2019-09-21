@@ -2,6 +2,13 @@
   "title": "Education",
   "content": [
     {
+      "type": "cent-heading",
+      "icon": "ic_vuw.png",
+      "backgroundColour": "#004B34",
+      "heading": "Bachelor of Science (BSc) majoring in Computer Science",
+      "subheading": "2016 - 2019"
+    },
+    {
       "type": "text",
       "text": "Coming soon!"
     }
