@@ -3,10 +3,27 @@
   padding-bottom: 1em;
 }
 
+.content-element {
+  flex: 1 1 0px;
+  margin: 0 0.5em;
+}
+
+.content-element:first-child {
+  margin-left: 0;
+}
+
+.content-element:last-child {
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 960px) {
 
   .content-row {
     display: block;
+  }
+
+  .content-element {
+    margin: 0.5em 0;
   }
 
 }

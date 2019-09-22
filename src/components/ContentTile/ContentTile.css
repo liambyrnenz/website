@@ -1,7 +1,5 @@
 .content-tile {
   border: 2px solid white;
-  flex: 1 1 0px;
-  margin: 0 0.5em;
   padding: 1em;
   text-align: center;
 }
