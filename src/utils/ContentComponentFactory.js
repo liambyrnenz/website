@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ContentCenteredHeading, ContentPhotoText } from '../components';
+import { ContentCenteredHeading, ContentPhotoText, ContentRow, ContentTile } from '../components';
 
 class ContentComponentFactory {
 
@@ -16,6 +16,17 @@ class ContentComponentFactory {
     if (object.type === "phototext") {
       return <ContentPhotoText image={object.photo} croppingOff={object.croppingOff}
         title={object.title} subtitle={object.subtitle} description={object.description} />
+    }
+    if (object.type === "row") {
+      // recursively make and append components to row elements
+      var elements = []
+      for (var i = 0; i < object.elements.length; i++) {
+        elements.push(ContentComponentFactory.make(object.elements[i]));
+      }
+      return <ContentRow elements={elements}/>
+    }
+    if (object.type === "tile") {
+      return <ContentTile primaryLabel={object.primaryLabel} secondaryLabel={object.secondaryLabel}/>
     }
     if (object.type === "text") {
       return <p>{object.text}</p>

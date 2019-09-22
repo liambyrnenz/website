@@ -1,6 +1,8 @@
 import Banner from './Banner'
 import ContentCenteredHeading from './ContentCenteredHeading'
 import ContentPhotoText from './ContentPhotoText'
+import ContentRow from './ContentRow'
+import ContentTile from './ContentTile'
 import Footer from './Footer'
 import Grid from './Grid';
 import Header from './Header';
@@ -15,6 +17,8 @@ export {
   Banner, 
   ContentCenteredHeading, 
   ContentPhotoText, 
+  ContentRow,
+  ContentTile,
   Footer, 
   Grid, 
   Header, 

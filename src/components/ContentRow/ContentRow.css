@@ -1,0 +1,12 @@
+.content-row {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 960px) {
+
+  .content-row {
+    display: block;
+  }
+
+}

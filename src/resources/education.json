@@ -9,6 +9,31 @@
       "subheading": "2016 - 2019"
     },
     {
+      "type": "row",
+      "elements": [
+        {
+          "type": "tile",
+          "primaryLabel": "Victoria Excellence Scholarship",
+          "secondaryLabel": "2016"
+        },
+        {
+          "type": "tile",
+          "primaryLabel": "Engineering and Computer Science School Dean's List",
+          "secondaryLabel": "2016"
+        },
+        {
+          "type": "tile",
+          "primaryLabel": "Engineering and Computer Science School Dean's List",
+          "secondaryLabel": "2017"
+        },
+        {
+          "type": "tile",
+          "primaryLabel": "Engineering and Computer Science School Dean's List",
+          "secondaryLabel": "2018"
+        }
+      ]
+    },
+    {
       "type": "text",
       "text": "Coming soon!"
     }
