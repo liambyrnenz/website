@@ -1,6 +1,7 @@
 .content-tile {
   border: 2px solid white;
-  padding: 1em;
+  height: 100%;
+  padding: 0 1em 0.5em 1em;
   text-align: center;
 }
 
@@ -11,4 +12,12 @@
 
 .content-tile-label-secondary {
   margin: 0;
+}
+
+@media only screen and (max-width: 960px) {
+
+  .content-tile {
+    padding-bottom: 1em;
+  }
+
 }
