@@ -15,7 +15,7 @@ class ContentCenteredHeading extends Component {
           backgroundColor: `${this.props.backgroundColour}`
         }
       }>
-        <img src={icon} className="content-cent-heading-icon" />
+        <img src={icon} alt="Centered Heading Icon" className="content-cent-heading-icon" />
         <div className="content-cent-heading-heading">
           {this.props.heading}
         </div>
