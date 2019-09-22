@@ -17,3 +17,11 @@
   animation-delay: 0.75s;
   animation-fill-mode: both;
 }
+
+@media only screen and (max-width: 480px) {
+
+  .title {
+    font-size: 48px;
+  }
+
+}
