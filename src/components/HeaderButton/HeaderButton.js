@@ -3,14 +3,6 @@ import './HeaderButton.css';
 
 class HeaderButton extends Component {
 
-  getContainerClassName() {
-    if (this.props.menu) {
-      return "hamburger-container";
-    } else if (this.props.close) {
-      return "hamburger-container hamburger-container-padded";
-    }
-  }
-
   getBarClassName(id) {
     if (this.props.menu) {
       return "hamburger-bar";
@@ -27,7 +19,7 @@ class HeaderButton extends Component {
 
   render() {
     return (
-      <div className={this.getContainerClassName()} onClick={this.props.onButtonClicked}>
+      <div className="hamburger-container" onClick={this.props.onButtonClicked}>
         <div className={this.getBarClassName(1)}></div>
         <div className={this.getBarClassName(2)}></div>
         <div className={this.getBarClassName(3)}></div>

@@ -1,13 +1,10 @@
 .hamburger-container {
   margin: auto 0;
+  padding: 1em;
 
   animation: fadein 1s;
   transform: scale(1.0);
   transition: all 0.25s;
-}
-
-.hamburger-container-padded {
-  padding: 1em 0;
 }
 
 .hamburger-container:hover {
