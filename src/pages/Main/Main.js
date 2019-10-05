@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './Main.css';
 
@@ -57,7 +57,7 @@ class Main extends Component {
 
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <Header hidingLogo={this.state.modalOnScreen}
           menuButton={!this.state.modalOnScreen}
           closeButton={this.state.modalOnScreen}
@@ -65,7 +65,7 @@ class Main extends Component {
         {this.getBanners()}
         {this.getMainContent()}
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 
