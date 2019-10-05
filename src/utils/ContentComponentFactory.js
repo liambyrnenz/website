@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ContentCenteredHeading, ContentPhotoText, ContentRow, ContentTile } from '../components';
+import { ContentCenteredHeading, ContentHeading, ContentPhotoText, ContentRow, ContentTile } from '../components';
 
 class ContentComponentFactory {
 
@@ -12,6 +12,9 @@ class ContentComponentFactory {
     if (object.type === "cent-heading") {
       return <ContentCenteredHeading icon={object.icon} backgroundColour={object.backgroundColour}
         heading={object.heading} subheading={object.subheading} />
+    }
+    if (object.type === "heading") {
+      return <ContentHeading heading={object.heading} />
     }
     if (object.type === "phototext") {
       return <ContentPhotoText image={object.photo} croppingOff={object.croppingOff}

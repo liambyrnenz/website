@@ -1,9 +1,10 @@
-import Banner from './Banner'
-import ContentCenteredHeading from './ContentCenteredHeading'
-import ContentPhotoText from './ContentPhotoText'
-import ContentRow from './ContentRow'
-import ContentTile from './ContentTile'
-import Footer from './Footer'
+import Banner from './Banner';
+import ContentCenteredHeading from './ContentCenteredHeading';
+import ContentHeading from './ContentHeading';
+import ContentPhotoText from './ContentPhotoText';
+import ContentRow from './ContentRow';
+import ContentTile from './ContentTile';
+import Footer from './Footer';
 import Grid from './Grid';
 import Header from './Header';
 import Label from './Label';
@@ -16,6 +17,7 @@ import TileOverlay from './TileOverlay';
 export { 
   Banner, 
   ContentCenteredHeading, 
+  ContentHeading,
   ContentPhotoText, 
   ContentRow,
   ContentTile,
