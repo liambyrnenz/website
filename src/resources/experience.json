@@ -16,6 +16,48 @@
       "title": "Marlborough Lines",
       "subtitle": "IT Support Assistant",
       "description": "I spent the summer of 2017/2018 working as an IT support assistant at Marlborough Lines, the main electricity distribution company for the Marlborough region at the top of the South Island. While working there, I researched and trialled new helpdesk and mobile device management systems to help the IT team better manage technical support of the wider organization."
+    },
+    {
+      "type": "heading",
+      "heading": "Education"
+    },
+    {
+      "type": "cent-heading",
+      "icon": "ic_vuw.png",
+      "backgroundColour": "#004B34",
+      "heading": "Bachelor of Science (BSc) majoring in Computer Science",
+      "subheading": "2016 - 2019"
+    },
+    {
+      "type": "row",
+      "elements": [
+        {
+          "type": "tile",
+          "primaryLabel": "Victoria Excellence Scholarship",
+          "secondaryLabel": "2016"
+        },
+        {
+          "type": "tile",
+          "primaryLabel": "Engineering and Computer Science School Dean's List",
+          "secondaryLabel": "2016"
+        },
+        {
+          "type": "tile",
+          "primaryLabel": "Engineering and Computer Science School Dean's List",
+          "secondaryLabel": "2017"
+        },
+        {
+          "type": "tile",
+          "primaryLabel": "Engineering and Computer Science School Dean's List",
+          "secondaryLabel": "2018"
+        }
+      ]
+    },
+    {
+      "type": "phototext",
+      "photo": "hsftf_1.png",
+      "title": "Huawei Seeds for the Future",
+      "description": "Coming soon!"
     }
   ]
 }

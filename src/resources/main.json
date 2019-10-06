@@ -8,19 +8,19 @@
       "menuColour": "#00CCFF"
     },
     {
-      "path": "/education",
-      "title": "Education",
-      "menuColour": "#00A537"
-    },
-    {
       "path": "/projects",
       "title": "Projects",
-      "menuColour": "#FFBC00"
+      "menuColour": "#00A537"
     },
     {
       "path": "/volunteering",
       "title": "Volunteering",
       "menuColour": "#FF0000"
+    },
+    {
+      "path": "/blog",
+      "title": "Blog",
+      "menuColour": "#FFBC00"
     }
   ]
 }
