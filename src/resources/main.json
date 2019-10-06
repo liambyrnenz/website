@@ -1,1 +1,30 @@
-{}
+{
+  "banners": [
+    {
+      "text": "Hi!",
+      "colour": "#FF0000"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/experience",
+      "title": "Experience",
+      "menuColour": "#00CCFF"
+    },
+    {
+      "path": "/education",
+      "title": "Education",
+      "menuColour": "#00A537"
+    },
+    {
+      "path": "/projects",
+      "title": "Projects",
+      "menuColour": "#FFBC00"
+    },
+    {
+      "path": "/volunteering",
+      "title": "Volunteering",
+      "menuColour": "#FF0000"
+    }
+  ]
+}

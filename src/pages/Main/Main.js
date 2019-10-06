@@ -33,22 +33,34 @@ class Main extends Component {
     return banners;
   }
 
+  // Create, populate and return the router switch used for navigation.
+  // The home page is always added in and additional pages are loaded from the main data file.
+  createRouter() {
+    var routes = [];
+
+    if (data.pages) {
+      for (var i = 0; i < data.pages.length; i++) {
+        let page = data.pages[i];
+
+        routes.push(
+          <Route path={page.path} render={() => <ContentPage content={page.path.substring(1)} />} />
+        )
+      }
+    }
+
+    return <Switch>
+      <Route exact path="/" component={Home} />
+      {routes}
+    </Switch>;
+  }
+
   // Load the main content visible on screen. This is either the modal menu
   // or actual content rendered depending on the current route.
   getMainContent() {
     if (this.state.modalOnScreen) {
       return <ModalMenu onItemClicked={() => this.toggleModalMenu()} />;
     }
-
-    return (
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/experience" render={() => <ContentPage content="experience" />} />
-        <Route path="/education" render={() => <ContentPage content="education" />} />
-        <Route path="/projects" render={() => <ContentPage content="projects" />} />
-        <Route path="/volunteering" render={() => <ContentPage content="volunteering" />} />
-      </Switch>
-    );
+    return this.createRouter();
   }
 
   toggleModalMenu() {
