@@ -29,7 +29,7 @@ class ContentComponentFactory {
       return <ContentRow elements={elements}/>
     }
     if (object.type === "tile") {
-      return <ContentTile primaryLabel={object.primaryLabel} secondaryLabel={object.secondaryLabel}/>
+      return <ContentTile icon={object.icon} primaryLabel={object.primaryLabel} secondaryLabel={object.secondaryLabel}/>
     }
     if (object.type === "text") {
       return <p>{object.text}</p>

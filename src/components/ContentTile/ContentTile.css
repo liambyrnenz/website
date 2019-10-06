@@ -5,9 +5,18 @@
   text-align: center;
 }
 
+.content-tile-icon {
+  max-width: 35px;
+  max-height: 35px;
+  margin-bottom: 0;
+  padding: 0.5em;
+  padding-top: 1em;
+}
+
 .content-tile-label-primary {
   font-size: 20px;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 0;
 }
 

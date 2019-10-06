@@ -33,21 +33,25 @@
       "elements": [
         {
           "type": "tile",
+          "icon": "ic_trophy.png",
           "primaryLabel": "Victoria Excellence Scholarship",
           "secondaryLabel": "2016"
         },
         {
           "type": "tile",
+          "icon": "ic_trophy.png",
           "primaryLabel": "Engineering and Computer Science School Dean's List",
           "secondaryLabel": "2016"
         },
         {
           "type": "tile",
+          "icon": "ic_trophy.png",
           "primaryLabel": "Engineering and Computer Science School Dean's List",
           "secondaryLabel": "2017"
         },
         {
           "type": "tile",
+          "icon": "ic_trophy.png",
           "primaryLabel": "Engineering and Computer Science School Dean's List",
           "secondaryLabel": "2018"
         }
