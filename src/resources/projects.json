@@ -3,28 +3,28 @@
   "content": [
     {
       "type": "phototext",
-      "photo": "",
+      "photo": "mar_1.png",
       "title": "CricHQ My Action Replay Hub",
       "subtitle": "VUW ENGR 300-Level Client Project // 2018",
       "description": "Over the course of my third year of study at Victoria University of Wellington, I worked with a team of software and hardware engineers to make improvements to the CricHQ My Action Replay Hub video capture solution. Our task was to make the Raspberry Pi-based unit more appealing for professional use. We delivered to our client a system with a refurbished case design and a brand new web interface for admins to interact with the device. This project gave me a great opportunity to test my leadership and management skills in the Agile space as well as learning new technologies."
     },
     {
       "type": "phototext",
-      "photo": "",
+      "photo": "createcamp18_1.png",
       "title": "Flat Five - Tenancy Transparency",
       "subtitle": "Summer of Tech Create Camp // 2018",
       "description": "Our team produced an app for tenants to rate their flatting experiences in Summer of Tech's Create Camp for 2018. This was a very unique experience for me since I took on roles as both a designer and a developer. I developed and learned more about creating personas, UX decisions and user feedback during this event. I also found success in accurately implementing wireframe designs into the final application."
     },
     {
       "type": "phototext",
-      "photo": "",
+      "photo": "swwlg_1.png",
       "title": "CoNGO HADR",
       "subtitle": "Startup Weekend Wellington // 2018",
       "description": "I participated in a Startup Weekend over the penultimate weekend of July 2018 to come up with solutions that would greatly benefit humanitarian assistance and disaster relief (HADR). As well as working with a range of people from different backgrounds and helping to prototype ideas, I learned a lot about the processes and driving forces behind business establishment, pitching and entrepreneurship. "
     },
     {
       "type": "phototext",
-      "photo": "",
+      "photo": "sotdia_1.png",
       "title": "Summer of Tech Weekend Web Challenge - Team Treehouse",
       "subtitle": "Summer of Tech & Department of Internal Affairs // 2018",
       "description": "I took part in a weekend hackathon at the Department of Internal Affairs as hosted by Summer of Tech Wellington. I learned a lot about web development and worked closely with other developers and designers to deliver a concept for improving user experience and accessibility with the New Zealand Government's various web services."
