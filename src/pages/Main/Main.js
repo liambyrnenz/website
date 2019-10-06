@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import './Main.css';
-
 import { Banner, Footer, Header } from '../../components';
 import { Home, ModalMenu, ContentPage } from '../../pages';
 
