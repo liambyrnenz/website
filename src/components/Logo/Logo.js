@@ -10,7 +10,7 @@ class Logo extends Component {
       <Link to="/" className="logo-link">
         <div className={"text-container " + (this.props.hidden ? "invisible" : "visible")}>
           <p className="heading">Liam Byrne</p>
-          <p className="subheading">JUNIOR SOFTWARE ENGINEER</p>
+          <p className="subheading">MOBILE SOFTWARE ENGINEER</p>
         </div>
       </Link>
     );

@@ -3,7 +3,7 @@
     {
       "image_name": "me.png",
       "title": "I AM A...",
-      "text": "Junior software engineer with a focus on pushing the boundaries of mobile innovation."
+      "text": "Mobile software engineer with a focus on pushing the boundaries of mobile innovation."
     },
     {
       "image_name": "alphero.png",
@@ -47,18 +47,6 @@
       ]
     },
     {
-      "image_name": "soundcloud.png",
-      "title": "SOUNDCLOUD",
-      "text": "I like making music. Why not have a listen on my (%link)?",
-      "links": [
-        {
-          "name": "SoundCloud",
-          "link": "https://soundcloud.com/brnebeats",
-          "colour": "#FF6700"
-        }
-      ]
-    },
-    {
       "image_name": "twitter.png",
       "title": "TWITTER",
       "text": "Follow me on (%link).",
@@ -71,13 +59,25 @@
       ]
     },
     {
+      "image_name": "soundcloud.png",
+      "title": "SOUNDCLOUD",
+      "text": "I like making music. Why not have a listen on my (%link)?",
+      "links": [
+        {
+          "name": "SoundCloud",
+          "link": "https://soundcloud.com/indecizhion",
+          "colour": "#FF6700"
+        }
+      ]
+    },
+    {
       "image_name": "instagram.png",
       "title": "INSTAGRAM",
-      "text": "Check out my (%link).",
+      "text": "Check out my music (%link).",
       "links": [
         {
           "name": "Instagram",
-          "link": "https://instagram.com/liambyrnenz",
+          "link": "https://instagram.com/indecizhion",
           "colour": "#C984F4"
         }
       ]
