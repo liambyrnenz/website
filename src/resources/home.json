@@ -23,18 +23,6 @@
       "text": "An iOS developer, creating apps for multiple clients across many sectors in New Zealand."
     },
     {
-      "image_name": "github.png",
-      "title": "GITHUB",
-      "text": "Check out my projects on (%link).",
-      "links": [
-        {
-          "name": "GitHub",
-          "link": "https://github.com/liambyrnenz",
-          "colour": "#A6A6A6"
-        }
-      ]
-    },
-    {
       "image_name": "linkedin.png",
       "title": "LINKEDIN",
       "text": "Connect with me on (%link).",
@@ -55,6 +43,18 @@
           "name": "Twitter",
           "link": "https://twitter.com/liambyrnenz",
           "colour": "#2DAAE1"
+        }
+      ]
+    },
+    {
+      "image_name": "github.png",
+      "title": "GITHUB",
+      "text": "Check out my projects on (%link).",
+      "links": [
+        {
+          "name": "GitHub",
+          "link": "https://github.com/liambyrnenz",
+          "colour": "#A6A6A6"
         }
       ]
     },
