@@ -9,7 +9,7 @@ class Footer extends Component {
       <div className="footer">
         <span className="footer-text">
           Created by Liam Byrne.<br/>
-          2022 - v1.1b17
+          2022 - v1.1b18
         </span>
       </div>
     );
