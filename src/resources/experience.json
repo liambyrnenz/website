@@ -3,10 +3,10 @@
   "content": [
     {
       "type": "phototext",
-      "photo": "alphero_horizontal.png",
-      "croppingOff": true,
+      "photo": "alphero.png",
+      "croppingOff": false,
       "title": "Alphero",
-      "subtitle": "Developer",
+      "subtitle": "Senior iOS Developer",
       "description": "I've been a mobile developer at Alphero since 2018. I joined via Summer of Tech (an internship programme based out of Wellington, New Zealand) and now work full-time on projects for clients such as **Transpower**, **NZTA**, **MetService** and **MBIE**. I primarily work with iOS, using Swift and Objective-C to craft intuitive and intelligent apps to solve a wide range of issues across many sectors."
     },
     {
